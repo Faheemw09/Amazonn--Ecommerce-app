@@ -1,4 +1,5 @@
 import './App.css';
+
 // import Home from './Components/Home';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
@@ -6,9 +7,11 @@ import "slick-carousel/slick/slick-theme.css"
 import Footer from './components/Footer';
 import { Navbar } from './components/Navbar';
 
+
 import Home from './Components/Home';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
+
 
 import { MainRoute } from './Pages/MainRoute';
 import Footer from './Components/Footer';
@@ -31,6 +34,7 @@ function App() {
       <Navbar/>
       <MainRoute />
       <Footer/>
+
       {/* <Navbar/>
      <Home/> */}
    
