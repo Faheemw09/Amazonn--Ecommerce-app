@@ -5,7 +5,7 @@ import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons'
 
  const Navbar = () => {
   return (
-    
+    <div style={{position:"fixed",top:"0px",zIndex:"4",width:"100%",paddingRight:"200px"}}>
     <DIV className="navbar">
       <Flex className="nav">
         <Spacer />
@@ -19,14 +19,14 @@ import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons'
             Select your address</Text>
         </RouterLink>
         <Spacer />
-        <Center>
+        <Center >
           <Flex h='60px'>
             <Menu>
               <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
                 All
               </MenuButton>
               <RouterLink to="/mainadmin">
-              <Button>Ad</Button>
+              
               </RouterLink>
               <MenuList>
                 <MenuItem><RouterLink style={{ textDecoration: 'none', color:"black",fontFamily:"Amazon Ember,Arial,sansserif" }} to="/">Alexa Skills</RouterLink></MenuItem>
@@ -59,6 +59,7 @@ import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons'
         <Spacer />
         <Text><RouterLink to={"/cart"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Image w={60} h={60} src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-2.jpg" alt="cart" /></RouterLink></Text>
         <Spacer />
+        <Button>Ad</Button>
       </Flex>
       <Flex className="nav1">
         <Spacer />
@@ -89,6 +90,7 @@ import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons'
         <Spacer />
       </Flex>
     </DIV>
+    </div>
   )
 }
 export default  Navbar

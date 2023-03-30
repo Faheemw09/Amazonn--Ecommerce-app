@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Login from "../adminpages/Login";
 
 import MainAdmin from "../adminpages/MainAdmin";
+import Home from "../components/Home";
 
 import HomePage from "./HomePage";
 import Mainhome from "./Mainhome";
@@ -11,10 +12,10 @@ export const MainRoute = () => {
     return (
         <Routes>
 
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<Home />} />
             <Route  path="/login" element={<Login/>}/>
 
-            <Route path="/" element={<Mainhome />} />
+            {/* <Route path="/" element={<Mainhome />} /> */}
             <Route path="/mainadmin" element={<MainAdmin/>}/>
             
 
