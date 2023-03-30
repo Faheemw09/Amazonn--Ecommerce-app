@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Flex, Text, Spacer, Heading, Image, Input, IconButton, Center, MenuButton, MenuList, MenuItem, Menu, Button,Icon } from '@chakra-ui/react';
 import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons'
 
-export const Navbar = () => {
+ const Navbar = () => {
   return (
     
     <DIV className="navbar">
@@ -25,6 +25,9 @@ export const Navbar = () => {
               <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
                 All
               </MenuButton>
+              <RouterLink to="/mainadmin">
+              <Button>Ad</Button>
+              </RouterLink>
               <MenuList>
                 <MenuItem><RouterLink style={{ textDecoration: 'none', color:"black",fontFamily:"Amazon Ember,Arial,sansserif" }} to="/">Alexa Skills</RouterLink></MenuItem>
                 <MenuItem><RouterLink style={{ textDecoration: 'none', color:"black",fontFamily:"Amazon Ember,Arial,sansserif" }} to="/">Amazonn Devices</RouterLink></MenuItem>
@@ -88,6 +91,7 @@ export const Navbar = () => {
     </DIV>
   )
 }
+export default  Navbar
 
 const DIV = styled.div`
   border:0px solid black;
