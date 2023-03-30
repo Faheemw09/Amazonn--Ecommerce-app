@@ -52,7 +52,7 @@ import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons'
         <Spacer />
         <Text><RouterLink to={"/country"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text>EN</Text></RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/login"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>
+        <Text><RouterLink to={"/login"}  style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>
         <Image w={60} h={60} src="https://thumbs.dreamstime.com/b/user-icon-isolated-black-background-simple-vector-logo-161936729.jpg" alt="login" /></RouterLink></Text>
         <Spacer />
         <Text><RouterLink to={"/order"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}><Text>Returns<br/> & Order</Text></RouterLink></Text>

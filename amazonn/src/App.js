@@ -1,8 +1,17 @@
 import './App.css';
 
+// import Home from './Components/Home';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"
+// import {Admin} from "./adminpages/Admin"
+import Footer from './components/Footer';
+import { Navbar } from './components/Navbar';
+
+
 import Home from './Components/Home';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
+
 
 import { MainRoute } from './Pages/MainRoute';
 import Footer from './Components/Footer';
@@ -16,8 +25,16 @@ import Mainhome from './Pages/Mainhome';
 
 
 function App() {
+
   return (
     <div className="App">
+
+     {/* <Home/>
+   <Admin/> */}
+      <Navbar/>
+      <MainRoute />
+      <Footer/>
+
       {/* <Navbar/>
      <Home/> */}
    
@@ -27,6 +44,7 @@ function App() {
       
      
       {/* <Footer/> */}
+
 
     </div>
   );

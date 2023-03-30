@@ -35,3 +35,5 @@ const Login = () => {
 export default Login
 
 
+// dev-61etewi1oke1yajn.us.auth0.com    Domain
+// u2yyExeanfLzdhBp7ktDIsNLmJPWNZAh    Clint
