@@ -1,5 +1,5 @@
-import React from 'react'
-import "./Seasonal.css"
+import React from 'react';
+import "./Seasonal.css";
 
 function Seasonal({image,value}) {
   return (
@@ -7,7 +7,7 @@ function Seasonal({image,value}) {
      <a href=""><img src={image} alt="" /></a> 
      
     </div>
-  )
-}
+  );
+};
 
-export default Seasonal
+export default Seasonal;

@@ -1,9 +1,9 @@
 import './App.css';
  
-import Home from './components/Home';
+import Home from './Components/Home';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
-import Admin from "./adminpages/Admin"
+import {Admin} from "./adminpages/Admin"
 import Footer from './components/Footer';
 import { Navbar } from './components/Navbar';
 import { MainRoute } from './Pages/MainRoute';
@@ -12,12 +12,11 @@ import { MainRoute } from './Pages/MainRoute';
 
 function App() {
   return (
-    <div  className="App">
-    
-   {/* <Admin/> */}
+    <div className="App">
+     <Home/>
+   <Admin/>
       <Navbar/>
       <MainRoute/>
-      <Home/> 
       <Footer/>
 
     </div>

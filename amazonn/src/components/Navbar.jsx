@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Flex, Text, Spacer, Heading, Image, Input, IconButton, Center, MenuButton, MenuList, MenuItem, Menu, Button,Icon } from '@chakra-ui/react';
 import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons'
 
-export const Navbar = () => {
+ const Navbar = () => {
   return (
     <div style={{position:"fixed",top:"0px",zIndex:"4",width:"100%",paddingRight:"200px"}}>
     <DIV className="navbar">
@@ -25,6 +25,9 @@ export const Navbar = () => {
               <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
                 All
               </MenuButton>
+              <RouterLink to="/mainadmin">
+              <Button>Ad</Button>
+              </RouterLink>
               <MenuList>
                 <MenuItem><RouterLink style={{ textDecoration: 'none', color:"black",fontFamily:"Amazon Ember,Arial,sansserif" }} to="/">Alexa Skills</RouterLink></MenuItem>
                 <MenuItem><RouterLink style={{ textDecoration: 'none', color:"black",fontFamily:"Amazon Ember,Arial,sansserif" }} to="/">Amazonn Devices</RouterLink></MenuItem>
@@ -49,7 +52,7 @@ export const Navbar = () => {
         <Spacer />
         <Text><RouterLink to={"/country"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text>EN</Text></RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/login"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>
+        <Text><RouterLink to={"/login"}  style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>
         <Image w={60} h={60} src="https://thumbs.dreamstime.com/b/user-icon-isolated-black-background-simple-vector-logo-161936729.jpg" alt="login" /></RouterLink></Text>
         <Spacer />
         <Text><RouterLink to={"/order"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}><Text>Returns<br/> & Order</Text></RouterLink></Text>
@@ -89,6 +92,7 @@ export const Navbar = () => {
     </div>
   )
 }
+export default  Navbar
 
 const DIV = styled.div`
   border:0px solid black;

@@ -104,4 +104,29 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
   font-size: large;
   text-align: center;
 }
-
+.loginform{
+  width: 30%;
+  height: 350px;
+  /* border: 2px solid red; */
+  margin: auto;
+  background-color: #bdd6a7;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.inputform{
+  font-size: 25px;
+}
+.btnform{
+  font-size: 25px;
+  background-color: rgb(59, 59, 165);
+  color: white;
+  border-radius: 6px;
+  padding: 6px,6px;
+}
+.btnform:hover{
+  background-color: rgb(32, 32, 223);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.logname{
+  font-size: 30px;
+  text-decoration: underline;
+}
