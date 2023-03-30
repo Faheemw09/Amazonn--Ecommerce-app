@@ -1,7 +1,7 @@
 import { Stack, Heading, Input, Button, HStack, Text, Center, Image, Box, Flex, Spacer } from "@chakra-ui/react";
 // import { PhoneIcon, LockIcon } from '@chakra-ui/icons';
 
-function Footer() {
+const  Footer=()=> {
     return (
         <>
             <HStack display='flex' border="1px solid black" justifyContent={"center"} backgroundColor="#666666"  height="49px">
