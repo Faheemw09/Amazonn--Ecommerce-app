@@ -7,7 +7,9 @@ function Seasonal({image,value}) {
       <img src={image} alt="" />
      
     </div>
+
   );
+  
 };
 
 export default Seasonal;
