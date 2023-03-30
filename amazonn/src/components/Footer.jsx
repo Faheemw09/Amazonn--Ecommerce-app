@@ -63,13 +63,30 @@ function Footer() {
 
             <Box borderBottom="1px solid grey" backgroundColor="#232f3e ">
                 <Center>
-                <Flex>
+                <Flex gap="20px">
                     <Image w="150px" h="60px" marginTop="30px" gap="20px" src="https://www.thesun.co.uk/wp-content/uploads/2022/02/Amazon-Logo-1024x426-1.png" alt="amazon-logo"/>
-                    <br/>
-                    <Button w="150px" h="60px" marginTop="30px" backgroundColor="#232f3e ">Button</Button>
+                    <Button w="150px" h="60px" marginTop="30px" border="1px solid white" backgroundColor="#232f3e ">English</Button>
                 </Flex>
-                <Flex>
-                    <Text></Text>
+                </Center>
+                <Center>
+                <Flex gap="10px" color="white">
+                    <p>Australia</p>
+                    <p>Brazil</p>
+                    <p>Canada</p>
+                    <p>China</p>
+                    <p>France</p>
+                    <p>Germany</p>
+                    <p>Italy</p>
+                    <p>Japan</p>
+                    <p>Mexico</p>
+                    <p>Netherland</p>
+                    <p>Poland</p>
+                    <p>Singapore</p>
+                    <p>Spain</p>
+                    <p>Turkey</p>
+                    <p>UAE</p>
+                    <p>United Kingdom</p>
+                    <p>United State</p>
                 </Flex>
                 </Center>
             </Box>

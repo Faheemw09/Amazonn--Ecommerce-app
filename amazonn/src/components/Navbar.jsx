@@ -5,7 +5,7 @@ import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons'
 
 export const Navbar = () => {
   return (
-    
+    <div style={{position:"fixed",top:"0px",zIndex:"4",width:"100%",paddingRight:"200px"}}>
     <DIV className="navbar">
       <Flex className="nav">
         <Spacer />
@@ -19,7 +19,7 @@ export const Navbar = () => {
             Select your address</Text>
         </RouterLink>
         <Spacer />
-        <Center>
+        <Center >
           <Flex h='60px'>
             <Menu>
               <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
@@ -86,6 +86,7 @@ export const Navbar = () => {
         <Spacer />
       </Flex>
     </DIV>
+    </div>
   )
 }
 

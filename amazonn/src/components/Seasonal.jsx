@@ -4,7 +4,7 @@ import "./Seasonal.css"
 function Seasonal({image,value}) {
   return (
     <div className='om'>
-      <img src={image} alt="" />
+     <a href=""><img src={image} alt="" /></a> 
      
     </div>
   )

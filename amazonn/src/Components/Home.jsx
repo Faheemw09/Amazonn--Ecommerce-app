@@ -4,6 +4,9 @@ import Seasonal from './Seasonal'
 import "./Seasonal.css"
 import Slider from 'react-slick';
 import Midsection from './Midsection';
+import Slider1 from './Slider1';
+import Bottom from './Bottom';
+
 
  
 
@@ -105,6 +108,10 @@ function Home() {
    </Slider>
   {/* mid section   ..............* */}
   <Midsection/>
+  <Slider1 />
+  <Bottom/>
+ 
+ 
   
 
    
