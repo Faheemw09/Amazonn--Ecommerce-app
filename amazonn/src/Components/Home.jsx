@@ -6,6 +6,8 @@ import Slider from 'react-slick';
 import Midsection from './Midsection';
 import Slider1 from './Slider1';
 import Bottom from './Bottom';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 
  
@@ -91,7 +93,7 @@ function Home() {
 
   return (
     <div className='slider'>
-     
+     <Navbar/>
     <Slider {...settings}>
    
    {
@@ -111,7 +113,7 @@ function Home() {
   <Slider1 />
   <Bottom/>
  
- 
+<Footer/> 
   
 
    
