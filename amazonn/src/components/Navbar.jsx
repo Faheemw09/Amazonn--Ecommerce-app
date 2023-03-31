@@ -63,27 +63,27 @@ import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons'
       </Flex>
       <Flex className="nav1">
         <Spacer />
-        <Text><RouterLink to={"/"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}><Icon as={HamburgerIcon} />All</RouterLink></Text>
+        <Text><RouterLink to={"/product"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}><Icon as={HamburgerIcon} />All</RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Amazon miniTV</RouterLink></Text>
+        <Text><RouterLink to={"/product"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Amazon miniTV</RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Best Sellers</RouterLink></Text>
+        <Text><RouterLink to={"/product"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Best Sellers</RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Mobiles</RouterLink></Text>
+        <Text><RouterLink to={"/product"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Mobiles</RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Today's Deals</RouterLink></Text>
+        <Text><RouterLink to={"/product"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Today's Deals</RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Customer Service</RouterLink></Text>
+        <Text><RouterLink to={"/product"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Customer Service</RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Electronics</RouterLink></Text>
+        <Text><RouterLink to={"/product"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Electronics</RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Prime</RouterLink></Text>
+        <Text><RouterLink to={"/product"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Prime</RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>New Releases</RouterLink></Text>
+        <Text><RouterLink to={"/product"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>New Releases</RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Amazon Pay</RouterLink></Text>
+        <Text><RouterLink to={"/product"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Amazon Pay</RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Home & Kitchen</RouterLink></Text>
+        <Text><RouterLink to={"/product"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>Home & Kitchen</RouterLink></Text>
         <Spacer />
         <Spacer />
         <RouterLink to={"/"}><img src="https://m.media-amazon.com/images/G/31/img17/Home/AmazonTV/Ravina/Desktop/SWM_400x39_HUNTER_V2B._CB594119856_.jpg" alt="hunter" /></RouterLink>

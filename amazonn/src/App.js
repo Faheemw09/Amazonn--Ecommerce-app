@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Footer from './components/Footer';
 import  Navbar  from './components/Navbar';
 import { MainRoute } from './Pages/MainRoute';
+import Productslist from './components/Productslist';
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Navbar/>
     <MainRoute/>
     <Footer/>
+    
 
     </div>
   );
