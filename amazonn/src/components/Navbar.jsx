@@ -145,9 +145,7 @@ const Navbar = () => {
               <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
                 All
               </MenuButton>
-              <RouterLink to="/mainadmin">
-              
-              </RouterLink>
+             
               <MenuList>
                 <MenuItem><RouterLink style={{ textDecoration: 'none', color:"black",fontFamily:"Amazon Ember,Arial,sansserif" }} to="/">Alexa Skills</RouterLink></MenuItem>
                 <MenuItem><RouterLink style={{ textDecoration: 'none', color:"black",fontFamily:"Amazon Ember,Arial,sansserif" }} to="/">Amazonn Devices</RouterLink></MenuItem>
@@ -179,8 +177,16 @@ const Navbar = () => {
         <Spacer />
         <Text><RouterLink to={"/cart"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Image w={60} h={60} pt='35px' src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-2.jpg" alt="cart" /></RouterLink></Text>
         <Spacer />
+
+        <RouterLink to="/mainadmin">
+              
+            
+        <Button>Ad</Button>
+        </RouterLink>
+
         <Text><RouterLink to={"/admin"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text pt='40px'>Admin</Text></RouterLink></Text>
         
+
       </Flex>
       <Flex className="nav1">
         <Spacer />
