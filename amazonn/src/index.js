@@ -1,3 +1,6 @@
+
+
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -6,13 +9,19 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './redux/Store';
+import { Auth0Provider } from "@auth0/auth0-react";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
 
-  
-
+  <Auth0Provider
+  domain="dev-61etewi1oke1yajn.us.auth0.com"
+  clientId="u2yyExeanfLzdhBp7ktDIsNLmJPWNZAh"
+  authorizationParams={{
+    redirect_uri: window.location.origin
+  }}
+>
  
 <Provider   store={store}>
   <BrowserRouter>
@@ -20,6 +29,7 @@ root.render(
   </BrowserRouter>
   </Provider>
 
+  </Auth0Provider>,
 
 );
 
