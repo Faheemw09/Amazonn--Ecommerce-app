@@ -1,20 +1,21 @@
 import { Link as RouterLink } from "react-router-dom";
 import styled from "styled-components";
 import { Flex, Text, Spacer, Heading, Image, Input, IconButton, Center, MenuButton, MenuList, MenuItem, Menu, Button,Icon } from '@chakra-ui/react';
-import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons'
+import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons';
+import Logo from "../Logo/Amazonnn.png";
 
  const Navbar = () => {
   return (
     <div style={{position:"fixed",top:"0px",zIndex:"4",width:"100%",paddingRight:"200px"}}>
     <DIV className="navbar">
-      <Flex className="nav">
+      <Flex className="nav" style={{h:'200px'}}>
         <Spacer />
         <Heading color="white" >
-          <RouterLink style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }} to={"/"}>Home</RouterLink>
+          <RouterLink style={{ border:"0px solid red",textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }} to={"/"}><Image w='150px' h='100px' src={Logo} alt="logo" /></RouterLink>
         </Heading>
         <Spacer />
         <RouterLink to="/" style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>
-          <Text>Hello<br />
+          <Text pt='40px'>Hello<br />
             <Image w={20} h={20} src="https://www.citypng.com/public/uploads/small/11640206702gwyntgag5ikumzv8fytamqyv08imfehftxehrblnsprslnjogpcsdunagbrekcqn9embe3tcziupboj71qeqtvtijxccdsfihnec.png" alt="location" />
             Select your address</Text>
         </RouterLink>
@@ -50,16 +51,17 @@ import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons'
           </Flex>
         </Center>
         <Spacer />
-        <Text><RouterLink to={"/country"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text>EN</Text></RouterLink></Text>
+        <Text><RouterLink to={"/country"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text pt='40px'>EN</Text></RouterLink></Text>
         <Spacer />
         <Text><RouterLink to={"/login"}  style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>
-        <Image w={60} h={60} src="https://thumbs.dreamstime.com/b/user-icon-isolated-black-background-simple-vector-logo-161936729.jpg" alt="login" /></RouterLink></Text>
+        <Image w={60} h={60} pt='35px' src="https://thumbs.dreamstime.com/b/user-icon-isolated-black-background-simple-vector-logo-161936729.jpg" alt="login" /></RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/order"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}><Text>Returns<br/> & Order</Text></RouterLink></Text>
+        <Text><RouterLink to={"/order"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}><Text pt='30px'>Returns<br/> & Order</Text></RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/cart"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Image w={60} h={60} src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-2.jpg" alt="cart" /></RouterLink></Text>
+        <Text><RouterLink to={"/cart"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Image w={60} h={60} pt='35px' src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-2.jpg" alt="cart" /></RouterLink></Text>
         <Spacer />
-        <Button>Ad</Button>
+        <Text><RouterLink to={"/admin"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text pt='40px'>Admin</Text></RouterLink></Text>
+        
       </Flex>
       <Flex className="nav1">
         <Spacer />
