@@ -129,4 +129,135 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
 .logname{
   font-size: 30px;
   text-decoration: underline;
+
+}
+.btnlogin:hover{
+  background-color: #f01f1f;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.btnlogin{
+  font: bolder;
+  color:white;
+   font-size:18px;
+  background-color: rgb(59, 59, 36);
+   border-radius: 6px;
+   margin-top: 40%;
+}
+.btnlogout{
+  font: bolder;
+  color:white;
+   font-size:18px;
+  background-color: rgb(59, 59, 36);
+   border-radius: 6px;
+}
+.btnlogout:hover{
+  background-color: #f01f1f;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+/*  */
+/* Add product detail here */
+/*  */
+
+.Mainproductbox{
+  display: flex;
+  width: 80%;
+  border:2px solid rgb(18, 6, 6) ;
+  margin: auto;
+  margin-top: 10%;
+  gap: 30px;
+}
+.producttnbox{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border:2px solid rgb(43, 0, 255) ; */
+  margin: auto;
+  
+}
+.imageamazon{
+  width: 100%;
+}
+.prductbtn{
+  width: 30%;
+  height: 40px;
+  background-color: antiquewhite;
+  border-radius: 100%;
+  color: black;
+  font-size: 18px;
+  
+}
+.prductbtn:hover{
+  border-color: red;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+
+.productdetailbox{
+  display: flex;
+  width: 80%;
+  height: 250px;
+  /* border:8px solid black ; */
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  gap: 30px;
+}
+.paymentproductbox{
+  width: 35%;
+ padding-bottom: 6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+ /* border: 5px solid rgb(49, 35, 241); */
+}
+.pbox{
+  width: 80%;
+ text-align: start;
+ font-size: 18px;
+ padding-left: 5px;
+ border: 1px solid black;
+ margin: auto;
+
+ }
+.checkoutbtn{
+  background-color: yellow;
+  color: black;
+  font-size: 20px;
+  border-radius: 30px;
+  }
+.checkoutbtn:hover{
+  background-color: rgb(48, 51, 232);
+  color: white;
+}
+.deletebtn{
+  color: white;
+  font-size: 20px;
+  background-color: rgb(232, 62, 62);
+  margin-top: 10px;
+}
+.deletebtn:hover{
+  color: black;
+  background-color: rgb(249, 226, 54);
+}
+.honeproduct{
+  font-size: 18px;
+}
+.pcardproduct{
+  font-size: 25px;
+  color: black;
+}
+.ptotal{
+  font-size: 18px;
+  color: black;
+}
+.ansqty{
+  margin-left: 15px;
+  margin-right: 20px;
+}
+.paymebtimageamazon{
+  /* border: 2px solid red; */
+  width: 70%;
+  margin-top: 10px;
 }

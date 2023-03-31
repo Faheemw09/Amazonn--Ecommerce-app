@@ -10,6 +10,7 @@ import Home from "../components/Home";
 
 
 import Mainhome from "./Mainhome";
+import Productslist from "../components/Productslist";
 
 export const MainRoute = () => {
     return (
@@ -18,10 +19,13 @@ export const MainRoute = () => {
             <Route path="/" element={<Home />} />
             <Route  path="/login" element={<Login/>}/>
 
-            {/* <Route path="/" element={<Mainhome />} /> */}
             <Route path="/mainadmin" element={<MainAdmin/>}/>
+
             <Route path="/addproduct" element={<Addproductpage/>}></Route>
             <Route path="/editproduct/:id" element={<Editproductpage/>}/>
+
+            <Route  path="/product" element={<Productslist/>}/>
+
             
 
             <Route path="*" element={<h4>404 Page not Found</h4>} />
