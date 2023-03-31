@@ -1,11 +1,27 @@
+
 import { GET_DATA_FAILURE, GET_DATA_REQUEST, GET_DATA_SUCESSONADMIN } from "./ActionTypes"
 
+
+
 import axios from "axios"
-export const getAdmindata=(dispatch)=>{
+const url=`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`
+export const getAdmindata=()=>(dispatch)=>{
+
     dispatch({type:GET_DATA_REQUEST})
-    axios.get(`http://localhost:8080/products`)
+    axios.get(url)
     .then((res)=>{
-    console.log(res.data)
+    // console.log(res.data)
+    dispatch({type:GET_DATA_SUCESSONADMIN,payload:res.data})})
+    .catch((err)=>{
+        dispatch({type:GET_DATA_FAILURE})
+    })
+}
+export const getproductdata=()=>(dispatch)=>{
+
+    dispatch({type:GET_DATA_REQUEST})
+    axios.get(url)
+    .then((res)=>{
+    // console.log(res.data)
     dispatch({type:GET_DATA_SUCESSONADMIN,payload:res.data})})
     .catch((err)=>{
         dispatch({type:GET_DATA_FAILURE})

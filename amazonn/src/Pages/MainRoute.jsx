@@ -7,6 +7,7 @@ import Home from "../components/Home";
 
 import HomePage from "./HomePage";
 import Mainhome from "./Mainhome";
+import Productslist from "../components/Productslist";
 
 export const MainRoute = () => {
     return (
@@ -17,6 +18,7 @@ export const MainRoute = () => {
 
             {/* <Route path="/" element={<Mainhome />} /> */}
             <Route path="/mainadmin" element={<MainAdmin/>}/>
+            <Route  path="/product" element={<Productslist/>}/>
             
 
             <Route path="*" element={<h4>404 Page not Found</h4>} />
