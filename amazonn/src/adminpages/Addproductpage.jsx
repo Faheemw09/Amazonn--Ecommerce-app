@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Addproduct } from '../redux/Action';
+import AdminNav from './AdminNav';
 
 const initialstate={
   imageURL:"",
@@ -33,6 +34,8 @@ const Addproductpage = () => {
   };
 
   return (
+  <>
+  <AdminNav/>
     <div className='maindiv'>
       <div className='fomrnadmin'>
         <h2 className='allH2form'>Add Product</h2>
@@ -124,6 +127,7 @@ const Addproductpage = () => {
         </form>
       </div>
     </div>
+    </>
   )
 };
 

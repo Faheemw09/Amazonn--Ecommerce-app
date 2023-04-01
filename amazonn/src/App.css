@@ -5,6 +5,29 @@
   height: 40vmin;
   pointer-events: none;
 }
+.btnlogout{
+  font: bolder;
+  color:white;
+   font-size:18px;
+  background-color: rgb(59, 59, 36);
+   border-radius: 6px;
+}
+.btnlogout:hover{
+  background-color: #f01f1f;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.btnlogin:hover{
+  background-color: #f01f1f;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.btnlogin{
+  font: bolder;
+  color:white;
+   font-size:18px;
+  background-color: rgb(59, 59, 36);
+   border-radius: 6px;
+   margin-top: 40%;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

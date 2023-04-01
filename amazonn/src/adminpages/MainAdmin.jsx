@@ -61,7 +61,8 @@ import {
   } from '@chakra-ui/react'
   
 import {useDispatch, useSelector} from "react-redux"
-import { deleteproduct, getAdmindata } from "../redux/Action";
+import { deleteproduct,  getproductdata } from "../redux/Action";
+import AdminNav from "./AdminNav";
 const data = {
     isNew: true,
     imageURL:
@@ -81,6 +82,7 @@ const data = {
 //     const [isOpen, setIsOpen] = useState(false);
 
 //   const onClose = () => setIsOpen(false);
+const dispatch=useDispatch()
 
   const onDeleteClick = () => {
     setIsOpen(true);
@@ -107,36 +109,35 @@ const data = {
  
     const [form,setForm]=useState("")
     const products=useSelector((store)=>{
-        console.log(store.AdminReducer.products)
+        console.log(store.AdminReducer)
         return store.AdminReducer.products
     })
-   const dispatch=useDispatch()
+
     useEffect(()=>{
-      dispatch (getAdmindata)
+      dispatch(getproductdata)
     },[])
+    console.log(products.length)
+
     const handelForm=()=>{
 
     }
    return(
     <>
+    <AdminNav/>
     <Box style={{width:'850px' ,margin:'auto' 
-    ,height:'100px' ,display:'flex',justifyContent:'space-evenly', marginTop:'40px'}}
+    ,height:'100px' ,display:'flex',justifyContent:'space-evenly', marginTop:'20px'}}
    
     >
 
-    <Button value ="dsec"  bg={'#FBC02D'}  m={'20px'} >Price (High to Low) <ArrowDownIcon/> </Button>
-    <Button value ="asc"  bg={'#FBC02D'}  m={'20px'} mr={'15px'} >Price (Low to High) <ArrowUpIcon/></Button>
+    <Button bg={'#FEFEDF'}  color="#00C9A7" height="40px" border="0px"> Track orders  </Button>
+   
 
-    <Button mt={'20px'} fontSize={'20px'} fontWeight={'900'} mr={'15px'} bg={'#FBC02D'} p={'15px'}>Total Products : </Button>
+    <Button  bg={'#FEFEDF'} height="30px" color="#00C9A7"  border="0px" >Total Products :{products.length} </Button>
 
-<Link to="/addproduct">
-      <Button  ref={btnRef} mt={'20px'} colorScheme='teal' bg={'#FBC02D'} color="black" >
-      Add Products 
-      </Button>
-      </Link>
+
       
      
-      <Button value ="dsec"  bg={'#E53935'} color={"white"}  m={'20px'}  >Logout</Button>
+ 
     
 {/*     
       <Drawer
