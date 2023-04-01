@@ -75,9 +75,7 @@ const Navbar = () => {
 
           {/* Login part start here  */}
 
-
-          {/* <Text><RouterLink to={"/login"}  style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>
-        <Image w={60} h={60} src="https://thumbs.dreamstime.com/b/user-icon-isolated-black-background-simple-vector-logo-161936729.jpg" alt="login" /></RouterLink></Text> */}
+          <Spacer>
 
           <li>
             {
@@ -94,14 +92,14 @@ const Navbar = () => {
 
             }
           </li>
-
+          </Spacer>
           {/* Login part start  end*/}
           <Spacer />
           <Text><RouterLink to={"/order"} style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Text>Returns<br /> & Order</Text></RouterLink></Text>
           <Spacer />
           <Text><RouterLink to={"/cart"} style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Image w={60} h={60} src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-2.jpg" alt="cart" /></RouterLink></Text>
           <Spacer />
-          <Button>Ad</Button>
+          
         </Flex>
         <Flex className="nav1">
           <Spacer />
@@ -235,11 +233,16 @@ const Navbar = () => {
         <Spacer />
       </Flex>
     </DIV>
+
+    </div>
+
 </div>
+
     </div>
   )
 }
-export default Navbar
+
+export default Navbar;
 
 const DIV = styled.div`
   border:0px solid black;

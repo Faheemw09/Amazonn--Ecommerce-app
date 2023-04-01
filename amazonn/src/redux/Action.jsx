@@ -5,8 +5,6 @@ import { GET_DATA_FAILURE, GET_DATA_REQUEST, GET_DATA_SUCESSONADMIN, GET_UPDATE_
 
 
 
-
-
 import axios from "axios"
 
 
@@ -15,7 +13,14 @@ import axios from "axios"
 
 
 const url=`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`
+
+export const getAdmindata=()=>(dispatch)=>{
+
+
+
+const url=`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`
 // export const getAdmindata=()=>(dispatch)=>{
+
 
 
     dispatch({type:GET_DATA_REQUEST})
@@ -27,6 +32,10 @@ const url=`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`
         dispatch({type:GET_DATA_FAILURE})
     })
 }
+
+
+export const getproductdata=()=>(dispatch)=>{
+
 // export const getproductdata=()=>(dispatch)=>{
 
 
@@ -41,6 +50,7 @@ const url=`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`
 // }
 
 export const getproductdata=(dispatch)=>{
+
 
 
     dispatch({type:GET_DATA_REQUEST})
