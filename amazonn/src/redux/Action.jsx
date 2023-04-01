@@ -2,8 +2,6 @@
 import { GET_DATA_FAILURE, GET_DATA_REQUEST, GET_DATA_SUCESSONADMIN, GET_UPDATE_SUCESS, POST_ADDPRODUCT_SUCCESS, PRODUCT_DELETED_SUCCESS } from "./ActionTypes"
 
 
-import { GET_DATA_FAILURE, GET_DATA_REQUEST, GET_DATA_SUCESSONADMIN } from "./ActionTypes"
-
 
 
 
@@ -12,9 +10,9 @@ import axios from "axios"
 
 
 
-export const getAdmindata=(dispatch)=>{
 
 const url=`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`
+
 export const getAdmindata=()=>(dispatch)=>{
 
     dispatch({type:GET_DATA_REQUEST})
@@ -26,6 +24,7 @@ export const getAdmindata=()=>(dispatch)=>{
         dispatch({type:GET_DATA_FAILURE})
     })
 }
+
 export const getproductdata=()=>(dispatch)=>{
 
 
