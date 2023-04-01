@@ -26,15 +26,28 @@ export const getAdmindata=()=>(dispatch)=>{
         dispatch({type:GET_DATA_FAILURE})
     })
 }
-export const getproductdata=()=>(dispatch)=>{
+// export const getproductdata=()=>(dispatch)=>{
+
+//     dispatch({type:GET_DATA_REQUEST})
+//     axios.get(url)
+//     .then((res)=>{
+//     // console.log(res.data)
+//     dispatch({type:GET_DATA_SUCESSONADMIN,payload:res.data})})
+//     .catch((err)=>{
+//         dispatch({type:GET_DATA_FAILURE})
+//     })
+// }
+
+
+export const getproductdata=(paramObj)=>(dispatch)=>{
 
 
     dispatch({type:GET_DATA_REQUEST})
-    axios.get(url)
+    axios.get(url,paramObj)
     .then((res)=>{
     // console.log(res.data)
     dispatch({type:GET_DATA_SUCESSONADMIN,payload:res.data})})
-    .catch((err)=>{
+    .catch(()=>{
         dispatch({type:GET_DATA_FAILURE})
     })
 }
