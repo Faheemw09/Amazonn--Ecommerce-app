@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { editproduct } from "../redux/Action";
 import { Box, Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay } from "@chakra-ui/react";
+import MainAdmin from "./MainAdmin";
 
 const Editproductpage = () => {
   const { id } = useParams();
@@ -41,6 +42,8 @@ const Editproductpage = () => {
   };
 
   return (
+    <>
+   
     <div className="maindiv">
       <div className="fomrnadmin">
         <h2 className="allH2form">Edit Product</h2>
@@ -145,6 +148,7 @@ Go to Admin Dashboard
 </Box>
 </div>
 </div>
+</>
 );
 };
 export default Editproductpage

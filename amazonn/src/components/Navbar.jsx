@@ -5,8 +5,7 @@ import { Flex, Text, Spacer, Heading, Image, Input, IconButton, Center, MenuButt
 import { SearchIcon, ChevronDownIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { useAuth0 } from "@auth0/auth0-react";
 
-import { Flex, Text, Spacer, Heading, Image, Input, IconButton, Center, MenuButton, MenuList, MenuItem, Menu, Button,Icon } from '@chakra-ui/react';
-import { SearchIcon, ChevronDownIcon,HamburgerIcon } from '@chakra-ui/icons';
+
 import Logo from "../Logo/Amazonnn.png";
 import { useAuth0 } from "@auth0/auth0-react";
 
@@ -202,13 +201,8 @@ const Navbar = () => {
         <Text><RouterLink to={"/cart"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Image w={60} h={60} pt='35px' src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-2.jpg" alt="cart" /></RouterLink></Text>
         <Spacer />
 
-        <RouterLink to="/mainadmin">
-              
-            
-        <Button>Ad</Button>
-        </RouterLink>
-
-        <Text><RouterLink to={"/admin"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text pt='40px'>Admin</Text></RouterLink></Text>
+       
+        <Text><RouterLink to={"/mainadmin"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text pt='40px'>Admin</Text></RouterLink></Text>
         
 
       </Flex>
@@ -241,7 +235,7 @@ const Navbar = () => {
         <Spacer />
       </Flex>
     </DIV>
-
+</div>
     </div>
   )
 }
