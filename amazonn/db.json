@@ -20,7 +20,8 @@
       "color": "blue",
       "gender": "Men",
       "stock": 5,
-      "rating": 4
+      "rating": "4.1",
+      "category": "male"
     },
     {
       "id": 3,
@@ -75,7 +76,7 @@
       "color": "Pink",
       "gender": "Men",
       "stock": 4,
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 8,
@@ -132,7 +133,6 @@
       "stock": 3,
       "rating": 3.8
     },
-
     {
       "id": 13,
       "imageURL": "https://m.media-amazon.com/images/I/61Die4MR6GL._AC_UL320_.jpg",
@@ -144,7 +144,6 @@
       "stock": 3,
       "rating": 3.8
     },
-    
     {
       "id": 14,
       "imageURL": "https://m.media-amazon.com/images/I/719bm+Df3aL._AC_UL320_.jpg",
@@ -154,9 +153,8 @@
       "color": "Black",
       "gender": "Men",
       "stock": 5,
-      "rating": 4.0
+      "rating": 4
     },
-    
     {
       "id": 15,
       "imageURL": "https://m.media-amazon.com/images/I/61N6Jhs3IBL._AC_UL320_.jpg",
@@ -221,7 +219,7 @@
       "color": "wine",
       "gender": "Men",
       "stock": 3,
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 21,
@@ -443,7 +441,7 @@
       "color": "blue",
       "gender": "Women",
       "stock": 6,
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 43,
@@ -465,7 +463,7 @@
       "color": "Green",
       "gender": "Women",
       "stock": 2,
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 45,
@@ -476,7 +474,7 @@
       "color": "yellow",
       "gender": "Women",
       "stock": 3,
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 46,
@@ -487,7 +485,7 @@
       "color": "blue",
       "gender": "Women",
       "stock": 1,
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 47,
@@ -542,7 +540,7 @@
       "color": "Black",
       "gender": "Women",
       "stock": 4,
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 52,
@@ -586,7 +584,7 @@
       "color": "Dark Blue",
       "gender": "Women",
       "stock": 5,
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 56,
@@ -641,7 +639,7 @@
       "color": "Pink",
       "gender": "Women",
       "stock": 3,
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": 61,

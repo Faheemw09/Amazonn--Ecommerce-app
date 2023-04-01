@@ -1,39 +1,33 @@
 import React from 'react'
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Login = () => {
-  return (
-    <div>
-       <div className='loginform'>
-      <br/>
-    <h2 className='logname'>User Login</h2>
+  const { loginWithRedirect } = useAuth0();
+  const { logout } = useAuth0();
+  const { user, isAuthenticated} = useAuth0();
  
-     <form >
-     <br/>
-
-        <input className='inputform' type="name" placeholder='User Name'/>
-
-      <br/>
-      <br/>
-       
-        <input className='inputform' type="email" placeholder='Email'/>
-        <br/>
-    <br/>
-        <input  className='inputform' type="password" placeholder='Password'
-    
-        ></input>
-        <br/>
-        <br/>
-        <button  className='btnform' type='submit' >Log In</button>
-    </form>
-
-    
-    </div>
-    </div>
+  return (
+    <>
+          {/* {
+        isAuthenticated && <div> 
+                 <h2>{user.name}</h2>
+              </div>
+      }
+    {
+    isAuthenticated ? ( <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+    Log Out
+  </button>):(
+    <button onClick={() => loginWithRedirect()}>Log In</button>
   )
+
+  } */}
+  </>
+  )
+ 
 }
 
 export default Login
 
 
-// dev-61etewi1oke1yajn.us.auth0.com    Domain
+// dev-61etewi1oke1yajn.us.auth0.com   Domain
 // u2yyExeanfLzdhBp7ktDIsNLmJPWNZAh    Clint
