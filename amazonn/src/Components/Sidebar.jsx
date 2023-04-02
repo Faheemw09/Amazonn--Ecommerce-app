@@ -1,70 +1,114 @@
 import styled from "styled-components";
+import {useSearchParams} from "react-router-dom";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export const Sidebar = () => {
+  const [searchParams , setSearchParams] = useSearchParams();
+  const initialCategory = searchParams.getAll("brand");
+  const initialOrder = searchParams.get("order");
+
+  // console.log(initialCategory)
+  const [brand , setbrand] = useState(initialCategory || []);
+  const [order , setOrder] = useState(initialOrder || "");
+
+  const handleChange = (e) =>{
+    let newCategory = [...brand];
+    const value=e.target.value;
+
+    if(newCategory.includes(value)){
+      newCategory = newCategory.filter((el) => el !== value);
+    }else{
+      newCategory.push(value);
+    }
+    setbrand(newCategory)
+  }
+
+  const handleSort = (e) =>{
+    setOrder(e.target.value)
+  }
+
+  useEffect(()=>{
+   let params = {
+    brand,
+   }
+
+   order && (params.order = order)
+   setSearchParams(params)
+  },[brand,order])
+   console.log(brand)
   return (
     <DIV>
-      <h3>Filter by Price</h3>
-      <div>
+      <h3>Sort by Price</h3>
+      <div onChange={handleSort}>
         <input 
-         type="checkbox"
+         type="radio"
+         value={"asc"}
+         defaultChecked={order == "asc"}
+         name="order"
           />
-        <label>Under ₹1,000</label>
+        <label>ASC</label>
         <br />
         <br />
-        <input type="checkbox"
+        <input 
+         type="radio"
+         value={"desc"}
+         defaultChecked={order == "desc"}
+         name="order"
          />
-        <label>₹1,000-₹5,000</label>
+        <label>DESC</label>
         <br />
         <br />
-        <input type="checkbox"
-       />
-        <label>₹5,000-₹10,000</label>
-        <br />
-        <br />
-        <input type="checkbox" 
-        />
-        <label>₹10,000-₹20,000</label>
-        <br />
-        <br />
-        <input type="checkbox" 
-       />
-        <label>Over ₹20,000</label>
-        <br />
-      </div>
-      <br />
-      <br />
-      <br />
+        </div>
 
 
       <h3>Filter by Brand</h3>
       <div>
         <input 
          type="checkbox"
+         value={"Puma"}
+          onChange={handleChange}
+          checked={brand.includes("Puma")}
           />
         <label>Puma</label>
         <br />
         <br />
         <input type="checkbox"
+        value={"WROGN"}
+        onChange={handleChange}
+        checked={brand.includes("WROGN")}
          />
         <label>WROGN</label>
         <br />
         <br />
         <input type="checkbox"
+        value={"AUSK"}
+        onChange={handleChange}
+        checked={brand.includes("AUSK")}
        />
         <label>AUSK</label>
         <br />
         <br />
         <input type="checkbox" 
+        value={"Young trendz"}
+        onChange={handleChange}
+        checked={brand.includes("Young trendz")}
         />
         <label>Young trendz</label>
         <br />
         <br />
         <input type="checkbox" 
+        value={"LEE"}
+        onChange={handleChange}
+        checked={brand.includes("LEE")}
        />
         <label>LEE</label>
         <br />
         <br />
         <input type="checkbox" 
+        value={"LEVI'S"}
+        onChange={handleChange}
+        checked={brand.includes("LEVI'S")}
        />
         <label>LEVI'S</label>
       </div>
