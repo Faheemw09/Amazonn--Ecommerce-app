@@ -11,7 +11,7 @@ function Productslist() {
     const dispatch=useDispatch()
    
     useEffect(()=>{
-        dispatch(getproductdata())
+        dispatch(getproductdata)
 
     },[])
     console.log(product)
