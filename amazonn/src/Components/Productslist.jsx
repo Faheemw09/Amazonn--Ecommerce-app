@@ -5,6 +5,7 @@ import { Stack,HStack, Box, Heading, Container, Button,ButtonGroup, Spacer, Grid
 import ProductCrad from './ProductCrad';
 import { Sidebar } from './Sidebar';
 import { useLocation, useSearchParams } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function Productslist() {
   const dispatch=useDispatch()
@@ -34,6 +35,7 @@ function Productslist() {
     // console.log(product)
   return (
     <div>
+      <Navbar/>
       <Center style={{marginTop:"200px",border:"0px solid blue"}}>
         <Image w='100%' h='300px' src="https://tricks.nayag.com/wp-content/uploads/2022/01/Amazon-Deal-of-the-Day-Today.jpg" alt="err" />
       </Center>
