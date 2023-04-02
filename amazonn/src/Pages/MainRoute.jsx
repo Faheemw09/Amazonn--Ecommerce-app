@@ -20,6 +20,7 @@ export const MainRoute = () => {
             <Route path="/" element={<Home />} />
          
             <Route path="/mainadmin" element={<MainAdmin/>}/>
+            
 
             <Route path="/addproduct" element={<Addproductpage/>}></Route>
             <Route path="/editproduct/:id" element={<Editproductpage/>}/>
