@@ -24,7 +24,11 @@ function Productslist() {
     
    
     useEffect(()=>{
+
+        dispatch(getproductdata)
+
         dispatch(getproductdata(obj))
+
 
     },[Location.search])
     // console.log(product)

@@ -7,7 +7,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 
 import Logo from "../Logo/Amazonnn.png";
-import { useAuth0 } from "@auth0/auth0-react";
+
 
 
  const Navbar = () => {
@@ -18,10 +18,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 
 
-const Navbar = () => {
-  const { loginWithRedirect } = useAuth0();
-  const { logout } = useAuth0();
-  const { user, isAuthenticated } = useAuth0();
+
 
   return (
 
@@ -238,10 +235,10 @@ const Navbar = () => {
 
 </div>
 
-    </div>
+  
   )
 }
-
+ 
 export default Navbar;
 
 const DIV = styled.div`
@@ -254,16 +251,14 @@ const DIV = styled.div`
     background-color: #131921;
   }
 
-
-
-
   .htwostyle{
     color:white;
     font-size:11px;
   }
-
-`;
-
   
  `;
+
+
+  
+ 
 
