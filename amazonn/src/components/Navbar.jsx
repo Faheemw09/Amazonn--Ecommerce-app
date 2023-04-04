@@ -71,7 +71,7 @@ const Navbar = () => {
           <li>
             {
               isAuthenticated && <div>
-                <h2 className="htwostyle">{user.name}</h2>
+                <h2 className="htwostyle">{user}</h2>
               </div>
             }
             {

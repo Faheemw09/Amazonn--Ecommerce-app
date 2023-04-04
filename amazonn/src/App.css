@@ -175,11 +175,15 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
 
 .Mainproductbox{
   display: flex;
-  width: 80%;
-  border:2px solid rgb(18, 6, 6) ;
+  width: 60%;
+  height: 310px;
+  border:3px solid rgb(18, 6, 6);
   margin: auto;
   margin-top: 10%;
   gap: 30px;
+}
+.Mainproductbox:hover{
+  border:3px solid rgb(211, 11, 11);
 }
 .producttnbox{
   width: 60%;
@@ -209,8 +213,8 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
 
 .productdetailbox{
   display: flex;
-  width: 80%;
-  height: 250px;
+  width: 90%;
+  height: 200px;
   /* border:8px solid black ; */
   justify-content: center;
   align-items: center;
@@ -221,24 +225,27 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
 }
 .paymentproductbox{
   width: 35%;
+  height: 300px;
  padding-bottom: 6px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
  /* border: 5px solid rgb(49, 35, 241); */
+
 }
 .pbox{
   width: 80%;
  text-align: start;
- font-size: 18px;
+ font-size: 12px;
  padding-left: 5px;
  border: 1px solid black;
  margin: auto;
-
+margin-top: 10px;
  }
 .checkoutbtn{
   background-color: yellow;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 30px;
+  /* border: 2px solid red; */
   }
 .checkoutbtn:hover{
   background-color: rgb(48, 51, 232);
@@ -258,12 +265,15 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
   font-size: 18px;
 }
 .pcardproduct{
-  font-size: 25px;
+  font-size: 19px;
   color: black;
+  margin-top: -4px;
+  /* border: 2px solid red; */
 }
 .ptotal{
-  font-size: 18px;
+  font-size: 15px;
   color: black;
+  /* border: 5px solid red; */
 }
 .ansqty{
   margin-left: 15px;
@@ -271,6 +281,7 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
 }
 .paymebtimageamazon{
   /* border: 2px solid red; */
-  width: 70%;
+  width: 40%;
+  /* height: 200px; */
   margin-top: 10px;
 }
