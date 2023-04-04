@@ -41,14 +41,14 @@ const Adminproductdetail = () => {
                     />
                 {/* <h1>AmaZonn</h1> */}
                 <p className='pcardproduct'>Card Summary</p>
-                   <br/>
+                   
                
                 <p className='pbox'>Merchandise Subtotal:- </p>
-                <br/>
+                
                 <p className='pbox'>Shipping:</p>
-                <br/>
+               
                 <p className='pbox'>Estimated Tax :-</p>
-                <br/>
+               
               <p className='ptotal'>Total Amount:-</p>
                 <button className='checkoutbtn'>CheckOut</button>
             </div>
