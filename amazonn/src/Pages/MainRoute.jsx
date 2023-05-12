@@ -15,12 +15,17 @@ export const MainRoute = () => {
             <Route path="/" element={<Home />} />
             <Route  path="/login" element={<Login/>}/>
 
+            <Route  path="/login" element={<Login/>}/>
+
             <Route path="/mainadmin" element={<MainAdmin/>}/>
+
 
             <Route path="/addproduct" element={<Addproductpage/>}></Route>
             <Route path="/editproduct/:id" element={<Editproductpage/>}/>
 
             <Route  path="/product" element={<Productslist/>}/>
+            <Route path="/cart" element={<Cartlist />}></Route>
+            <Route path="/payment" element={<Payment/>}></Route>
             <Route path="/cart" element={<Cartlist />}></Route>
             <Route path="/payment" element={<Payment/>}></Route>
 
