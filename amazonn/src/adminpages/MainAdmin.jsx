@@ -139,48 +139,7 @@ const dispatch=useDispatch()
      
  
     
-{/*     
-      <Drawer
-        isOpen={isOpen}
-        placement='right'
-        onClose={onClose}
-        finalFocusRef={btnRef}
-        w={'100px'}
-      >
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
-          <DrawerHeader>Add Products Here ...</DrawerHeader>
 
-          <DrawerBody >
-            <Input m={'10px'} placeholder='title'  onChange={(e)=>setForm({...form,title:e.target.value})}
-            value={form.title}/>
-
-            <Input m={'10px'} placeholder='price'  onChange={(e)=>setForm({...form,price:e.target.value})}
-            value={form.price}/> 
-
-            <Input m={'10px'} placeholder='description'  onChange={(e)=>setForm({...form,description:e.target.value})}
-            value={form.description}/>
-
-            <Input m={'10px'} placeholder='category'  onChange={(e)=>setForm({...form,category:e.target.value})}
-            value={form.category}/>
-
-            <Input m={'10px'} placeholder='imageUrl'  onChange={(e)=>setForm({...form,image:e.target.value})}
-            value={form.image}/> 
-
-            <Input m={'10px'} placeholder='rating'  onChange={(e)=>setForm({...form,rating:e.target.value})}
-            value={form.rating}/>
-          </DrawerBody>
-
-          <DrawerFooter>
-            <Button variant='outline' mr={3} onClick={onClose}>
-              Cancel
-            </Button>
-            <Button colorScheme='blue' bg={'#FBC02D'} onClick={handelForm}>Save</Button>
-          </DrawerFooter>
-        </DrawerContent>
-      </Drawer>
-     */}
     </Box>
 
     <div>

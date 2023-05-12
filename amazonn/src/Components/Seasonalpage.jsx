@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Seasonal.css"
 
-function Seasonal1({image}) {
+function Seasonalpage({image}) {
   return (
     <div className='om2'>
       <img  src={image} alt="" />
@@ -10,5 +10,5 @@ function Seasonal1({image}) {
   )
 }
 
-export default Seasonal1
+export default Seasonalpage;
 

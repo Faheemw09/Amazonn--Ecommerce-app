@@ -1,8 +1,7 @@
 import React from 'react'
-
-import Seasonal1 from './Seasonal1'
 import "./Slider1.css"
 import Slider from 'react-slick';
+import Seasonalpage from './Seasonalpage';
 // import Midsection from './Midsection';
 
  
@@ -133,7 +132,7 @@ function Slider1() {
    
    {
     data.map((e,index)=>(
-     <Seasonal1 key={index}
+     <Seasonalpage key={index}
 
      image={e.image} 
     

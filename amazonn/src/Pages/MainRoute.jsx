@@ -1,33 +1,28 @@
 import { Routes, Route } from "react-router-dom";
 import Addproductpage from "../adminpages/Addproductpage";
 import Editproductpage from "../adminpages/Editproductpage";
-
-
 import Login from "../adminpages/Login";
-
 import MainAdmin from "../adminpages/MainAdmin";
-import Home from "../components/Home";
-
-
-import Mainhome from "./Mainhome";
-import Productslist from "../components/Productslist";
-import Singleproductpage from "../components/Singleproductpage";
+import Home from "../Components/Home";
+import Productslist from "../Components/Productslist";
+import Cartlist from "../Components/Cartlist";
+import Payment from "./Payment";
 
 export const MainRoute = () => {
     return (
         <Routes>
 
             <Route path="/" element={<Home />} />
-         
+            <Route  path="/login" element={<Login/>}/>
+
             <Route path="/mainadmin" element={<MainAdmin/>}/>
-            
 
             <Route path="/addproduct" element={<Addproductpage/>}></Route>
             <Route path="/editproduct/:id" element={<Editproductpage/>}/>
 
             <Route  path="/product" element={<Productslist/>}/>
-            <Route  path="/product/:id" element={<Singleproductpage/>}/>
-
+            <Route path="/cart" element={<Cartlist />}></Route>
+            <Route path="/payment" element={<Payment/>}></Route>
 
             
 
