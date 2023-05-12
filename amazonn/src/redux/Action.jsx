@@ -12,13 +12,13 @@ import axios from "axios"
 
 
 
-const url=`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`
+const url=`https://precious-bat-rugby-shirt.cyclic.app/products`
 
 export const getAdmindata=()=>(dispatch)=>{
 
 
 
-const url=`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`
+const url=`https://precious-bat-rugby-shirt.cyclic.app/products`
 // export const getAdmindata=()=>(dispatch)=>{
 
 
@@ -70,7 +70,7 @@ export const getproductdata=(paramObj)=>(dispatch)=>{
 export const  Addproduct=(data)=>(dispatch)=>{
     dispatch({type:GET_DATA_REQUEST})
     axios
-    .post(`http://localhost:8080/products`,data)
+    .post(`https://precious-bat-rugby-shirt.cyclic.app/products`,data)
     .then((res)=>{
       
        dispatch({type:POST_ADDPRODUCT_SUCCESS})
@@ -81,7 +81,7 @@ export const  Addproduct=(data)=>(dispatch)=>{
 
 export const editproduct=(dataobj,id)=>(dispatch)=>{
     dispatch({type:GET_DATA_REQUEST})
-    axios.patch(`http://localhost:8080/products/${id}`,dataobj)
+    axios.patch(`https://precious-bat-rugby-shirt.cyclic.app/products/${id}`,dataobj)
     .then(()=>{
         dispatch({type:GET_UPDATE_SUCESS})
     })
@@ -91,7 +91,7 @@ export const editproduct=(dataobj,id)=>(dispatch)=>{
 }
 
 export const deleteproduct=(id)=>(dispatch)=>{
-    axios.delete(`http://localhost:8080/products/${id}`)
+    axios.delete(`https://precious-bat-rugby-shirt.cyclic.app/products/${id}`)
     .then((res)=>{
         dispatch({ type: PRODUCT_DELETED_SUCCESS, payload: id });
     })

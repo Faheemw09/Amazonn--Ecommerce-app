@@ -12,7 +12,8 @@ const AdminNav = () => {
     
         alignItems: "center",
         backgroundColor:"black",
-        color :"white"
+        color :"white",
+       
       }}
     >
       <div>
