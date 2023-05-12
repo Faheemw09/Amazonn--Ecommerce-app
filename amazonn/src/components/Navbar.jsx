@@ -171,7 +171,7 @@ import Logo from "../Logo/Amazonnn.png";
           </Flex>
         </Center>
         <Spacer />
-        <Text><RouterLink to={"/country"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text pt='40px'>EN</Text></RouterLink></Text>
+        <Text><RouterLink to={"/country"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text pt='32px'>EN</Text></RouterLink></Text>
         <Spacer />
         {/* <Text><RouterLink to={"/login"}  style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>
         <Image w={60} h={60} pt='35px' src="https://thumbs.dreamstime.com/b/user-icon-isolated-black-background-simple-vector-logo-161936729.jpg" alt="login" /></RouterLink></Text> */}

@@ -1,0 +1,2 @@
+export const CART_SUCCES="CART_SUCCES"
+export const CART_FALIURE="CART_FALIURE"
