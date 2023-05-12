@@ -11,6 +11,7 @@ import Home from "../components/Home";
 
 import Mainhome from "./Mainhome";
 import Productslist from "../components/Productslist";
+import Singleproductpage from "../components/Singleproductpage";
 
 export const MainRoute = () => {
     return (
@@ -19,11 +20,14 @@ export const MainRoute = () => {
             <Route path="/" element={<Home />} />
          
             <Route path="/mainadmin" element={<MainAdmin/>}/>
+            
 
             <Route path="/addproduct" element={<Addproductpage/>}></Route>
             <Route path="/editproduct/:id" element={<Editproductpage/>}/>
 
             <Route  path="/product" element={<Productslist/>}/>
+            <Route  path="/product/:id" element={<Singleproductpage/>}/>
+
 
             
 

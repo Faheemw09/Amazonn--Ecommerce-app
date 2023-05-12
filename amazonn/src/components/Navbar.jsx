@@ -10,10 +10,16 @@ import Logo from "../Logo/Amazonnn.png";
 
 
 
-const Navbar = () => {
+ const Navbar = () => {
   const { loginWithRedirect } = useAuth0();
   const { logout } = useAuth0();
   const { user, isAuthenticated } = useAuth0();
+
+
+
+
+
+
   return (
 
     <div style={{ position: "fixed", top: "0px", zIndex: "4", width: "100%", paddingRight: "200px" }}>
@@ -167,21 +173,31 @@ const Navbar = () => {
         <Spacer />
         <Text><RouterLink to={"/country"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text pt='40px'>EN</Text></RouterLink></Text>
         <Spacer />
-        <Text><RouterLink to={"/login"}  style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>
-        <Image w={60} h={60} pt='35px' src="https://thumbs.dreamstime.com/b/user-icon-isolated-black-background-simple-vector-logo-161936729.jpg" alt="login" /></RouterLink></Text>
+        {/* <Text><RouterLink to={"/login"}  style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>
+        <Image w={60} h={60} pt='35px' src="https://thumbs.dreamstime.com/b/user-icon-isolated-black-background-simple-vector-logo-161936729.jpg" alt="login" /></RouterLink></Text> */}
+        <li>
+            {
+              isAuthenticated && <div>
+                <h2 className="htwostyle">{user.name}</h2>
+              </div>
+            }
+            {
+              isAuthenticated ? (<button  className="btnlogout" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                Log Out
+              </button>) : (
+                <button className="btnlogin" onClick={() => loginWithRedirect()}>Log In</button>
+              )
+
+            }
+          </li>
         <Spacer />
         <Text><RouterLink to={"/order"} style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}><Text pt='30px'>Returns<br/> & Order</Text></RouterLink></Text>
         <Spacer />
         <Text><RouterLink to={"/cart"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Image w={60} h={60} pt='35px' src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-2.jpg" alt="cart" /></RouterLink></Text>
         <Spacer />
 
-        <RouterLink to="/mainadmin">
-              
-            
-        <Button>Ad</Button>
-        </RouterLink>
-
-        <Text><RouterLink to={"/admin"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text pt='40px'>Admin</Text></RouterLink></Text>
+       
+        <Text><RouterLink to={"/mainadmin"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text pt='40px'>Admin</Text></RouterLink></Text>
         
 
       </Flex>
@@ -214,11 +230,15 @@ const Navbar = () => {
         <Spacer />
       </Flex>
     </DIV>
+
     </div>
-    </div>
+
+</div>
+
+  
   )
 }
-
+ 
 export default Navbar;
 
 const DIV = styled.div`
@@ -237,3 +257,8 @@ const DIV = styled.div`
   }
   
  `;
+
+
+  
+ 
+

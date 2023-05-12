@@ -1,11 +1,11 @@
 import { Box ,Center , HStack, Image, Stack , Text, VStack} from '@chakra-ui/react';
 import React from "react";
-// import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
-function ProductCrad({ title, imageURL, price, stock,brand,color,gender}){
+function ProductCrad({ title,id, imageURL, price, stock,brand,color,gender}){
     return (
         <Center>
-            {/* <RouterLink to={`/singleproduct/${id}`}> */}
+            <RouterLink to={`/product/${id}`}>
                 <Box style={{ border:"0px solid black",boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",fontFamily:"Amazon Ember,Arial,sansserif" }}>
                     <Image src={imageURL} h={300} w={250} alt={title}/>
                     <Stack>
@@ -37,7 +37,7 @@ function ProductCrad({ title, imageURL, price, stock,brand,color,gender}){
                       </VStack>
                     </Stack>
                 </Box>            
-            {/* </RouterLink> */}
+            </RouterLink>
         </Center>
     )
 }

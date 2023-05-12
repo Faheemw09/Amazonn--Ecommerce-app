@@ -11,21 +11,16 @@ import axios from "axios"
 
 
 
+
 const url=`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`
 
 export const getAdmindata=()=>(dispatch)=>{
 
-    dispatch({type:GET_DATA_REQUEST})
-    axios.get(url)
-    .then((res)=>{
-    // console.log(res.data)
-    dispatch({type:GET_DATA_SUCESSONADMIN,payload:res.data})})
-    .catch((err)=>{
-        dispatch({type:GET_DATA_FAILURE})
-    })
-}
 
-export const getproductdata=()=>(dispatch)=>{
+
+const url=`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products`
+// export const getAdmindata=()=>(dispatch)=>{
+
 
 
     dispatch({type:GET_DATA_REQUEST})
@@ -37,6 +32,41 @@ export const getproductdata=()=>(dispatch)=>{
         dispatch({type:GET_DATA_FAILURE})
     })
 }
+
+
+
+
+// export const getproductdata=()=>(dispatch)=>{
+
+
+//     dispatch({type:GET_DATA_REQUEST})
+//     axios.get(url)
+//     .then((res)=>{
+//     // console.log(res.data)
+//     dispatch({type:GET_DATA_SUCESSONADMIN,payload:res.data})})
+//     .catch((err)=>{
+//         dispatch({type:GET_DATA_FAILURE})
+//     })
+// }
+
+
+
+
+
+export const getproductdata=(paramObj)=>(dispatch)=>{
+
+
+    dispatch({type:GET_DATA_REQUEST})
+    axios.get(url,paramObj)
+
+    .then((res)=>{
+ console.log(res.data)
+    dispatch({type:GET_DATA_SUCESSONADMIN,payload:res.data})})
+    .catch(()=>{
+        dispatch({type:GET_DATA_FAILURE})
+    })
+}
+
 export const  Addproduct=(data)=>(dispatch)=>{
     dispatch({type:GET_DATA_REQUEST})
     axios
@@ -48,6 +78,7 @@ export const  Addproduct=(data)=>(dispatch)=>{
        dispatch({type:GET_DATA_FAILURE})
     })
 }
+
 export const editproduct=(dataobj,id)=>(dispatch)=>{
     dispatch({type:GET_DATA_REQUEST})
     axios.patch(`http://localhost:8080/products/${id}`,dataobj)
@@ -58,6 +89,7 @@ export const editproduct=(dataobj,id)=>(dispatch)=>{
         dispatch({type:GET_DATA_FAILURE})
     })
 }
+
 export const deleteproduct=(id)=>(dispatch)=>{
     axios.delete(`http://localhost:8080/products/${id}`)
     .then((res)=>{
