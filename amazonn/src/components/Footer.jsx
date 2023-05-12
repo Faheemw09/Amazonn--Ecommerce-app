@@ -1,6 +1,4 @@
 import { Stack, Heading, Input, Button, HStack, Text, Center, Image, Box, Flex, Spacer } from "@chakra-ui/react";
-// import { PhoneIcon, LockIcon } from '@chakra-ui/icons';
-
 const  Footer=()=> {
     return (
         <>
@@ -69,6 +67,7 @@ const  Footer=()=> {
                 </Flex>
                 </Center>
                 <Center>
+
                 <Flex gap="10px" color="white">
                     <p>Australia</p>
                     <p>Brazil</p>

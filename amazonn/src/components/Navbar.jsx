@@ -1,24 +1,14 @@
 import { Link as RouterLink } from "react-router-dom";
 import styled from "styled-components";
-
 import { Flex, Text, Spacer, Heading, Image, Input, IconButton, Center, MenuButton, MenuList, MenuItem, Menu, Button, Icon } from '@chakra-ui/react';
 import { SearchIcon, ChevronDownIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { useAuth0 } from "@auth0/auth0-react";
-
-
 import Logo from "../Logo/Amazonnn.png";
-
-
 
  const Navbar = () => {
   const { loginWithRedirect } = useAuth0();
   const { logout } = useAuth0();
   const { user, isAuthenticated } = useAuth0();
-
-
-
-
-
 
   return (
 
@@ -91,6 +81,7 @@ import Logo from "../Logo/Amazonnn.png";
           </li>
           </Spacer>
           {/* Login part start  end*/}
+
           <Spacer />
           <Text><RouterLink to={"/order"} style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Text>Returns<br /> & Order</Text></RouterLink></Text>
           <Spacer />
@@ -159,8 +150,7 @@ import Logo from "../Logo/Amazonnn.png";
               </MenuList>
               <Input placeholder='Search Amazonn.in' w='600px'  h='55px'/>
               <IconButton
-                // size='sm'
-                w='40px'
+                 w='40px'
                 h='60px'
                 color='black'
                 backgroundColor={"#febd69 "}
@@ -173,8 +163,6 @@ import Logo from "../Logo/Amazonnn.png";
         <Spacer />
         <Text><RouterLink to={"/country"} style={{ textDecoration: 'none', color:"white" ,fontFamily:"Amazon Ember,Arial,sansserif"}}><Text pt='32px'>EN</Text></RouterLink></Text>
         <Spacer />
-        {/* <Text><RouterLink to={"/login"}  style={{ textDecoration: 'none', color:"white",fontFamily:"Amazon Ember,Arial,sansserif" }}>
-        <Image w={60} h={60} pt='35px' src="https://thumbs.dreamstime.com/b/user-icon-isolated-black-background-simple-vector-logo-161936729.jpg" alt="login" /></RouterLink></Text> */}
         <li>
             {
               isAuthenticated && <div>
@@ -230,12 +218,9 @@ import Logo from "../Logo/Amazonnn.png";
         <Spacer />
       </Flex>
     </DIV>
-
     </div>
-
 </div>
-
-  
+ 
   )
 }
  
