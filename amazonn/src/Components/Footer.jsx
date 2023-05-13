@@ -48,6 +48,7 @@ const  Footer=()=> {
                     <Text fontSize="14px" lineHeight="16.8px">Amazon Pay on Merchants</Text>
                 </Stack>
 
+
                 <Stack align={'flex-start'}>
                     <Heading fontSize="16px" fontWeight={700} lineHeight="16.8px">Let Us Help You</Heading>
                     <Text fontSize="14px" lineHeight="16.8px">COVID-19 and Amazon</Text>
