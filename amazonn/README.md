@@ -4,6 +4,7 @@ Functionality
 
 Home Page
 
+
 The home page displays a list of featured products, along with their prices and images. Users can click on a product to view its details on the product page.
 
 Product Page
