@@ -1,69 +1,27 @@
-# Getting Started with Create React App
+This project is an e-commerce website built with React, React-Redux, Material-UI, Chakra-UI, Styled Components, HTML, CSS, and JavaScript. The website includes a home page, product page, cart page, and an admin portal with CRUD operations.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Functionality
+Home Page
+The home page displays a list of featured products, along with their prices and images. Users can click on a product to view its details on the product page.
 
-## Available Scripts
+Product Page
+The product page displays a list of all products available for purchase. Users can sort the products by price or popularity, or filter them by brand or color. The page also includes a search bar that users can use to search for specific products. Each product includes a picture, name, description, price, and a button to add the item to their cart.
 
-In the project directory, you can run:
-n### `npm start`
+Add to Cart Functionality
+When a user clicks the "Add to Cart" button on the product page, the item is added to their cart. The cart page displays all items in the user's cart, along with their quantities and total price. Users can update the quantity of items in their cart or remove items altogether.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Filtering and Sorting
+Users can filter products on the product page by brand or color using a dropdown menu. They can also sort products by price or popularity by selecting an option from a dropdown menu.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Admin Portal
+The admin portal provides a way for site administrators to add, edit, and delete products from the website. Administrators can add new products by filling out a form that includes a product name, description, price, brand, color, and an image upload feature. They can also edit existing products or delete them altogether.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Tech Stack
+React
+React-Redux
+Material-UI
+Chakra-UI
+Styled Components
+HTML
+CSS
+JavaScript
