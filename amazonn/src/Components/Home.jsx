@@ -13,7 +13,7 @@ import Bottom from './Bottom';
 import Seasonalpage from './Seasonalpage';
 
 import Navbar1 from './Navbar1';
-import Footer from './Footer1';
+import Footer from './Footer';
 // import Navbar from './Navbar';
 
 
