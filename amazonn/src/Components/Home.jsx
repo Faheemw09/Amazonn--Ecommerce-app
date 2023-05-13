@@ -1,20 +1,17 @@
 import React from 'react'
 
+
 // import Seasonal from './Seasonal'
+ 
 import "./Seasonal.css"
 import Slider from 'react-slick';
 import Midsection from './Midsection';
 import Slider1 from './Slider1';
 import Bottom from './Bottom';
-import Navbar from './Navbar';
+
 import Footer from './Footer';
-
-
- 
-
-
-
-
+import Seasonalpage from './Seasonalpage';
+// import Navbar from './Navbar';
 
 
 function Home() {
@@ -45,9 +42,6 @@ function Home() {
    
   ]
 
-  
-     
-  
   const settings = {
     dots: true,
     arrows: true,
@@ -89,8 +83,6 @@ function Home() {
     ]
   };
 
-
-
   return (
     <div className='slider'>
      <Navbar/>
@@ -98,11 +90,9 @@ function Home() {
    
    {
     data.map((e,index)=>(
-     <Seasonal key={index}
+     <Seasonalpage key={index}
 
      image={e.image} 
-    
-    
      
      />
     ))
