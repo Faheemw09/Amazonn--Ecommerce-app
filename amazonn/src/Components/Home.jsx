@@ -4,19 +4,10 @@ import Slider from 'react-slick';
 import Midsection from './Midsection';
 import Slider1 from './Slider1';
 import Bottom from './Bottom';
-<<<<<<< HEAD
 import Footer from './Footer';
 import Seasonalpage from './Seasonalpage';
-import Navbar from './Navbar';
-=======
-
-// import Footer from './Footer';
-import Seasonalpage from './Seasonalpage';
-
 import Navbar1 from './Navbar1';
-import Footer from './Footer';
-// import Navbar from './Navbar';
->>>>>>> 54846e55d4226c4eac4a4cd63308a5afbbc6f20a
+
 
 
 function Home() {
