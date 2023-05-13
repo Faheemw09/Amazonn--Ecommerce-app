@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Seasonal from './Seasonal'
+// import Seasonal from './Seasonal'
 import "./Seasonal.css"
 import Slider from 'react-slick';
 import Midsection from './Midsection';
