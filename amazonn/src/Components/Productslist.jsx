@@ -5,7 +5,8 @@ import { Stack,HStack, Box, Heading, Container, Button,ButtonGroup, Spacer, Grid
 import ProductCrad from './ProductCrad';
 import { Sidebar } from './Sidebar';
 import { useLocation, useSearchParams } from 'react-router-dom';
-import Navbar from './Navbar';
+
+import Navbar1 from './Navbar1';
 
 
 function Productslist() {
@@ -36,9 +37,9 @@ function Productslist() {
     // console.log(product)
   return (
     <div>
-      <Navbar/>
+      <Navbar1/>
       <Center style={{marginTop:"200px",border:"0px solid blue"}}>
-        <Image w='100%' h='300px' src="https://tricks.nayag.com/wp-content/uploads/2022/01/Amazon-Deal-of-the-Day-Today.jpg" alt="err" />
+        <Image w='100%' h='200px' src="https://tricks.nayag.com/wp-content/uploads/2022/01/Amazon-Deal-of-the-Day-Today.jpg" alt="err" />
       </Center>
     {/* ************************************* */}
     <div style={{border:"0px solid black",marginTop:'6px'}}>
