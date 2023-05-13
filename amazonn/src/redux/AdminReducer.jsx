@@ -1,12 +1,16 @@
 
 import React from 'react'
 import { GET_DATA_FAILURE, GET_DATA_SUCESSONADMIN, GET_UPDATE_SUCESS, POST_ADDPRODUCT_SUCCESS, PRODUCT_DELETED_SUCCESS } from './ActionTypes'
+import { filter } from '@chakra-ui/react'
 
 
 const initilastate={
     isLoading:false,
     isError:false,
-    products:[]
+    products:[],
+    filters:{
+text:"",
+    }
 }
 
 

@@ -4,11 +4,6 @@ import Slider from 'react-slick';
 import Seasonalpage from './Seasonalpage';
 // import Midsection from './Midsection';
 
- 
-
-
-
-
 
 
 function Slider1() {

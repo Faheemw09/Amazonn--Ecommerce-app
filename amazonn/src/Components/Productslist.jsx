@@ -7,6 +7,7 @@ import { Sidebar } from './Sidebar';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import Navbar from './Navbar';
 
+
 function Productslist() {
   const dispatch=useDispatch()
   const Location = useLocation()
