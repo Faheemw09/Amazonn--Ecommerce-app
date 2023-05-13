@@ -34,25 +34,6 @@ const url=`https://precious-bat-rugby-shirt.cyclic.app/products`
 }
 
 
-
-
-// export const getproductdata=()=>(dispatch)=>{
-
-
-//     dispatch({type:GET_DATA_REQUEST})
-//     axios.get(url)
-//     .then((res)=>{
-//     // console.log(res.data)
-//     dispatch({type:GET_DATA_SUCESSONADMIN,payload:res.data})})
-//     .catch((err)=>{
-//         dispatch({type:GET_DATA_FAILURE})
-//     })
-// }
-
-
-
-
-
 export const getproductdata=(paramObj)=>(dispatch)=>{
 
 
