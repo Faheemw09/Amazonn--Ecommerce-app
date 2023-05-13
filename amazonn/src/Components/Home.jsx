@@ -1,12 +1,17 @@
 import React from 'react'
+
+
+// import Seasonal from './Seasonal'
+ 
 import "./Seasonal.css"
 import Slider from 'react-slick';
 import Midsection from './Midsection';
 import Slider1 from './Slider1';
 import Bottom from './Bottom';
-import Navbar from './Navbar';
+
 import Footer from './Footer';
 import Seasonalpage from './Seasonalpage';
+// import Navbar from './Navbar';
 
 
 function Home() {
