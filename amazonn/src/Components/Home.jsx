@@ -9,8 +9,11 @@ import Midsection from './Midsection';
 import Slider1 from './Slider1';
 import Bottom from './Bottom';
 
-import Footer from './Footer';
+// import Footer from './Footer';
 import Seasonalpage from './Seasonalpage';
+
+import Navbar1 from './Navbar1';
+import Footer from './Footer1';
 // import Navbar from './Navbar';
 
 
@@ -85,7 +88,7 @@ function Home() {
 
   return (
     <div className='slider'>
-     <Navbar/>
+     <Navbar1/>
     <Slider {...settings}>
    
    {
@@ -103,7 +106,7 @@ function Home() {
   <Slider1 />
   <Bottom/>
  
-<Footer/> 
+<Footer/>  
   
 
    

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {useSearchParams} from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
-
+import { Divider } from '@chakra-ui/react'
 export const Sidebar = () => {
   const [searchParams , setSearchParams] = useSearchParams();
   const initialCategory = searchParams.getAll("brand");
@@ -61,7 +61,7 @@ export const Sidebar = () => {
         <br />
         </div>
 
-
+        <Divider orientation='horizontal' />
       <h3>Filter by Brand</h3>
       <div>
         <input 
@@ -154,14 +154,19 @@ export const Sidebar = () => {
 
 const DIV = styled.div`
   width: 15%;
-  border-right: 1px solid gray;
+  border-right: 2px solid gray;
   text-align: left;
+  background-color:#D0D1FF;
   margin-left: 20px;
+  color:#F25757;
+  text-color:#F25757
+  
   label {
     margin-left: 5px;
   }
   input,
   label {
     font-size: larger;
+    font-family:bold
   }
 `;

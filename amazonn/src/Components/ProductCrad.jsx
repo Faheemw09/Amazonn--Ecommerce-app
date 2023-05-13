@@ -17,7 +17,7 @@ function ProductCrad({id, title, imageURL, price, stock,brand,color,gender}){
         <Center>
            
                 <Box style={{ border:"0px solid black",boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",fontFamily:"Amazon Ember,Arial,sansserif" }}>
-                    <Image src={imageURL} h={300} w={250} alt={title}/>
+                    <Image src={imageURL} h={250} w={250} alt={title} mt={"5px"}/>
                     <Stack>
                       <VStack>
                       <HStack>
@@ -25,28 +25,32 @@ function ProductCrad({id, title, imageURL, price, stock,brand,color,gender}){
                         <Text>{title}</Text>
                       </HStack>
                       <HStack>
-                        <label>Brand:</label>
+                       
                         <Text>{brand}</Text>
-                      </HStack>
-                      <HStack>
-                        <label>Color:</label>
                         <Text>{color}</Text>
-                      </HStack>
-                      <HStack>
-                        <label>Gender:</label>
-                        <Text>{gender}</Text>
-                      </HStack>
-                      <HStack>
+<Text>{gender}</Text>
                         <label>₹:</label>
                         <Text>{price}</Text>
                       </HStack>
                       <HStack>
+                        
+                        {/* <Text>{color}</Text> */}
+                      </HStack>
+                      <HStack>
+                        
+                        
+                      </HStack>
+                      <HStack>
+                       
+                      </HStack>
+                      <HStack>
                         <label>Stock:</label>
                         <Text>{stock}</Text>
+                        <button onClick={carthandler} style={{color:"#F25757",backgroundColor:"#D0D1FF",fontSize:"15px",border:"0px"}}>Add to Cart</button>
                       </HStack>
                       <HStack>
                       
-                      <button onClick={carthandler} style={{color:"green",backgroundColor:"black",fontSize:"20px"}}>Add to Cart</button>
+                  
                       </HStack>
                       </VStack>
                     
