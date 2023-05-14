@@ -10,6 +10,7 @@ import Navbar1 from './Navbar1';
 
 
 
+
 function Home() {
   const data=[
     {
