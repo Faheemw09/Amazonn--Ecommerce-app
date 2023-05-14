@@ -2,27 +2,14 @@ import { Link as RouterLink } from "react-router-dom";
 import styled from "styled-components";
 import { Flex, Text, Spacer, Heading, Image, Input, IconButton, Center, MenuButton, MenuList, MenuItem, Menu, Button, Icon } from '@chakra-ui/react';
 import { SearchIcon, ChevronDownIcon, HamburgerIcon } from '@chakra-ui/icons'
-import { useAuth0 } from "@auth0/auth0-react";
 import Logo from "../Logo/Amazonnn.png";
 import { useState } from "react";
+import Login from "./Login";
+import SearchPage from "./SearchPage";
 
 
 
-const Navbar1 = ({children,onSearch}) => {
-  const { loginWithRedirect } = useAuth0();
-  const { logout } = useAuth0();
-  const { user, isAuthenticated } = useAuth0();
-  const [query, setQuery] = useState('');
-
-  const handleInputChange = (event) => {
-    setQuery(event.target.value);
-  };
-
-  const handleKeyDown = (event) => {
-    if (event.key === 'Enter') {
-      onSearch(query);
-    }
-  };
+const Navbar1 = () => {
 
   return (
 
@@ -58,17 +45,22 @@ const Navbar1 = ({children,onSearch}) => {
                     <MenuItem><RouterLink style={{ textDecoration: 'none', color: "black", fontFamily: "Amazon Ember,Arial,sansserif" }} to="/">Baby</RouterLink></MenuItem>
                     <MenuItem><RouterLink style={{ textDecoration: 'none', color: "black", fontFamily: "Amazon Ember,Arial,sansserif" }} to="/">Beauty</RouterLink></MenuItem>
                   </MenuList>
-                  <Input   placeholder='Search Amazon.in'
+                  {/* <Input   placeholder='Search Amazon.in'
       w='600px'
       h='40px'
       borderRadius='10px'
       value={query}
       onChange={handleInputChange}
       onKeyDown={handleKeyDown}
-     ></Input> 
+     >
+    
+      </Input>  */}
+      <SearchPage w='600px'
+      h='40px'
+      borderRadius='10px'
+      ></SearchPage>    
                   
-                  
-                  <IconButton
+                  {/* <IconButton
                   h='50px'
                    borderRadius={"10px"} 
                     w='40px'
@@ -77,28 +69,14 @@ const Navbar1 = ({children,onSearch}) => {
                     backgroundColor={"#febd69 "}
                     aria-label='Search database'
                     icon={<SearchIcon />}
-                  />
+                  /> */}
                 </Menu>
               </Flex>
             </Center>
             <Spacer />
             <Text><RouterLink to={"/country"} style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Text pt='32px'>EN</Text></RouterLink></Text>
             <Spacer />
-            <li>
-              {
-                isAuthenticated && <div>
-                  <h2 className="htwostyle">{user.name}</h2>
-                </div>
-              }
-              {
-                isAuthenticated ? (<button className="btnlogout" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-                  Log Out
-                </button>) : (
-                  <button className="btnlogin" onClick={() => loginWithRedirect()}>Log In</button>
-                )
-
-              }
-            </li>
+            <Login></Login>
             <Spacer />
             <Text><RouterLink to={"/order"} style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Text pt='30px'>Returns<br /> & Order</Text></RouterLink></Text>
             <Spacer />

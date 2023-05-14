@@ -2,7 +2,8 @@ import './App.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import { MainRoute } from './Pages/MainRoute';
-// import Login from './Components/Login';
+
+
 
 
 function App() {
@@ -10,10 +11,6 @@ function App() {
     <div className="App">
      
     <MainRoute/>
-  
-
-{/* <Login></Login> */}
-
     </div>
   );
 }
