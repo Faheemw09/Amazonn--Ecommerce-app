@@ -82,7 +82,7 @@ const Navbar1 = ({children,onSearch}) => {
               </Flex>
             </Center>
             <Spacer />
-            <Text><RouterLink to={"/country"} style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Text pt='32px'>EN</Text></RouterLink></Text>
+            <Text style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }} ><Text pt='32px'>EN</Text></Text>
             <Spacer />
             <li>
               {
@@ -94,13 +94,13 @@ const Navbar1 = ({children,onSearch}) => {
                 isAuthenticated ? (<button className="btnlogout" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
                   Log Out
                 </button>) : (
-                  <button className="btnlogin" onClick={() => loginWithRedirect()}>Log In</button>
+                  <button className="btnlogin" style={{color:"greenyellow"}} onClick={() => loginWithRedirect()}>Log In</button>
                 )
 
               }
             </li>
             <Spacer />
-            <Text><RouterLink to={"/order"} style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Text pt='30px'>Returns<br /> & Order</Text></RouterLink></Text>
+            <Text style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Text pt='30px'>Returns<br /> & Order</Text></Text>
             <Spacer />
             <Text><RouterLink to={"/cart"} style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Image w={60} h={60} pt='35px' src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-2.jpg" alt="cart" /></RouterLink></Text>
             <Spacer />
