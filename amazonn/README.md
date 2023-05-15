@@ -24,11 +24,15 @@ The product page displays a list of products with a filter and sort functionalit
 ![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/54d6d6e7-cee5-47a8-bfc3-39242e40f37d)
 
 
+
+
 Brand's Product-
 ![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/83a09e12-b780-4010-a3a4-05ccdc3f76d2)
 
 
-Single Product Page-
+
+Cartpage
+Users can add products to their cart from the product page and checkout on the cart page.
 ![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/e1a0530a-7b6a-4d5e-851b-f25fa0d81fd6)
 
      
