@@ -1,18 +1,27 @@
 import { Box ,Center , HStack, Image, Stack , Text, VStack} from '@chakra-ui/react';
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {  Link as RouterLink, useNavigate } from "react-router-dom";
 import { cartdata } from '../redux/cartreducer/action';
 import { useDispatch } from 'react-redux';
 
 
+const Search_Api = `{https://precious-bat-rugby-shirt.cyclic.app/products}&s=titanic`;
+
 function ProductCrad({id, title, imageURL, price, stock,brand,color,gender}){
+  const [query, setQuery]= useState("titanic");
   const dispatch=useDispatch()
   
   const carthandler=()=>{
+    setQuery(Search_Api)
     dispatch(cartdata(id))
+    
     alert("product added succesfully")
    
   }
+
+  useEffect(()=>{
+    setQuery(`${Search_Api}&s=${query}`)
+  },[])
     return (
         <Center>
            
@@ -22,15 +31,15 @@ function ProductCrad({id, title, imageURL, price, stock,brand,color,gender}){
                       <VStack>
                       <HStack>
                         {/* <label>Title:</label> */}
-                        <Text>{title}</Text>
+                        <Text>{title} {query.title}</Text>
                       </HStack>
                       <HStack>
                        
                         <Text>{brand}</Text>
-                        <Text>{color}</Text>
+                        <Text>{color} </Text>
 <Text>{gender}</Text>
                         <label>₹:</label>
-                        <Text>{price}</Text>
+                        <Text>{price} </Text>
                       </HStack>
                       <HStack>
                         

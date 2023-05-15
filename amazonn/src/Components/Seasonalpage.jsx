@@ -3,7 +3,7 @@ import "./Seasonal.css"
 
 function Seasonalpage({image}) {
   return (
-    <div className='om2'>
+    <div className='om'>
       <img  src={image} alt="" />
      
     </div>

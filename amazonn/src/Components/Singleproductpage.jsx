@@ -1,23 +1,3 @@
-// import {
-//   Box,
-//   chakra,
-//   Container,
-//   Stack,
-//   Text,
-//   imageURL,
-//   Flex,
-//   VStack,
-//   Button,
-//   Heading,
-//   SimpleFlex,
-//   StackDivider,
-//   useColorModeValue,
-//   VisuallyHidden,
-//   List,
-//   ListItem,
-//   Spinner,
-//   Link,
-// } from "@chakra-ui/react";
 import { Image, Text, Button, Heading, CardBody,Stack, Card,Box, Center,UnorderedList,ListItem, Spacer, Flex } from '@chakra-ui/react';
 import { useState, useEffect, } from "react";
 import axios from "axios";
@@ -60,7 +40,7 @@ export const Singleproductpage = () => {
   const [data, setData] = useState({})
   const { id } = useParams()
   useEffect(() => {
-    axios.get(`http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/products/${id}`)
+    axios.get(`https://precious-bat-rugby-shirt.cyclic.app/products/${id}`)
       .then((res) => {
         setData(res.data)
         setLoading(false)
@@ -80,7 +60,7 @@ export const Singleproductpage = () => {
           direction={{ base: 'column', sm: 'row' }}
           overflow='hidden'
           variant='outline'
-          border='1px solid black'
+          // border='1px solid black'
         >
           <Flex gap='20px'>
           <Image

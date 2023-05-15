@@ -94,7 +94,7 @@ const Navbar1 = ({children,onSearch}) => {
                 isAuthenticated ? (<button className="btnlogout" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
                   Log Out
                 </button>) : (
-                  <button className="btnlogin" style={{color:"greenyellow"}} onClick={() => loginWithRedirect()}>Log In</button>
+                  <button className="btnlogin" style={{color:"grey"}} onClick={() => loginWithRedirect()}>Log In</button>
                 )
 
               }

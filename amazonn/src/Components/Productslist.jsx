@@ -8,6 +8,7 @@ import { useLocation, useSearchParams } from 'react-router-dom';
 
 import Navbar1 from './Navbar1';
 
+
 function Productslist() {
   const dispatch=useDispatch()
   const Location = useLocation()

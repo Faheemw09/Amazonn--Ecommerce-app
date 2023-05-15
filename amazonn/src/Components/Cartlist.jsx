@@ -5,6 +5,7 @@ import Carddata from './Carddata'
 import { Link, Navigate, useLocation } from 'react-router-dom'
 import Navbar1 from './Navbar1'
 
+
 function Cartlist({}) {
   const cartproduct=useSelector((store)=>store.cartReducer.cart)
   const location=useLocation()
