@@ -3,18 +3,16 @@ import Addproductpage from "../adminpages/Addproductpage";
 import Editproductpage from "../adminpages/Editproductpage";
 import Login from "../adminpages/Login";
 import MainAdmin from "../adminpages/MainAdmin";
-import Home from "../Components/Home";
 import Productslist from "../Components/Productslist";
 import Cartlist from "../Components/Cartlist";
 import Payment from "./Payment";
 import SearchProductPage from "../Components/Searchproductpage";
-// import CartSection from "../Components/CartSection";
 import Singleproductpage from "../Components/Singleproductpage";
-// import SearchPage from "../Components/SearchPage";
+import HomePage from "../HomeAllpage/HomePage";
 export const MainRoute = () => {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/mainadmin" element={<MainAdmin/>}/>
             <Route  path="/login" element={<Login/>}/>
             <Route path="/addproduct" element={<Addproductpage/>}></Route>

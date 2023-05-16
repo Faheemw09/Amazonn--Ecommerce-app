@@ -38,18 +38,15 @@ function Productslist() {
   return (
     <div>
       <Navbar1/>
-      <Center style={{marginTop:"200px",border:"0px solid blue"}}>
-        <Image w='100%' h='200px' src="https://tricks.nayag.com/wp-content/uploads/2022/01/Amazon-Deal-of-the-Day-Today.jpg" alt="err" />
-      </Center>
-    {/* ************************************* */}
-    <div style={{border:"0px solid black",marginTop:'6px'}}>
+        {/* ************************************* */}
+    <div style={{border:"0px solid black",marginTop:'13%'}}>
 
     
     <Container maxW='100%'>
       <Flex >
         <Sidebar/>
   {/* **************************************************** */}
-        <Center w='80%' >
+        {/* <Center w='80%' > */}
           <Grid templateColumns="repeat(4,1fr)" gap={10}>
             {product?.length &&
               product.map((el) => (
@@ -60,7 +57,7 @@ function Productslist() {
                 </GridItem>
               ))}
           </Grid>
-        </Center>
+        {/* </Center> */}
       </Flex>
     </Container>
     <br/>

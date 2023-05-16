@@ -18,7 +18,7 @@ function ProductCrad({ id, title, imageURL, price, stock, brand, color, gender }
 
     dispatch(cartdata(id))
 
-    alert("product added succesfully")
+    alert("Product Added To Cart Successfully")
 
   }
 
@@ -37,6 +37,7 @@ function ProductCrad({ id, title, imageURL, price, stock, brand, color, gender }
             borderRadius='lg'
             h={250} w={250}
           />
+          buy
           </RouterLink>
           <Stack mt='6' spacing='3'>
             <Heading w={"100%"} fontSize={"10px"}>{title}</Heading>
@@ -71,6 +72,23 @@ function ProductCrad({ id, title, imageURL, price, stock, brand, color, gender }
             </Button>
           </ButtonGroup>
         </CardFooter>
+
+        {/* <CardFooter>
+          <ButtonGroup spacing='2' margin={"auto"}>
+            <Button onClick={carthandler}
+              variant='ghost'
+              colorScheme='blue'
+              borderRadius={"10px"}
+              padding={"4px 6px"}
+              fontSize={"18px"}
+              color={"white"}
+              backgroundColor={"#0000CD"}
+              border={"0px solid red"}
+            >
+             Buy
+            </Button>
+          </ButtonGroup>
+        </CardFooter> */}
       </Card>
 
     </Center>

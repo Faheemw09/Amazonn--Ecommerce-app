@@ -3,11 +3,23 @@ import styled from "styled-components";
 import { Flex, Text, Spacer, Heading, Image, Input, IconButton, Center, MenuButton, MenuList, MenuItem, Menu, Button, Icon } from '@chakra-ui/react';
 import { SearchIcon, ChevronDownIcon, HamburgerIcon } from '@chakra-ui/icons'
 import Logo from "../Logo/Amazonnn.png";
+import { useState } from "react";
 import Login from "./Login";
 
 
 
-const Navbar = ({children}) => {
+const Navbar1 = ({onSearch}) => {
+  const [query, setQuery] = useState('');
+
+  const handleInputChange = (event) => {
+    setQuery(event.target.value);
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      onSearch(query);
+    }
+  };
 
   return (
 
@@ -20,15 +32,18 @@ const Navbar = ({children}) => {
             </Heading>
             <Spacer />
             <RouterLink to="/" style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}>
-              <Text pt='40px'>Hello<br />
-                <Image w={20} h={20} src="https://www.citypng.com/public/uploads/small/11640206702gwyntgag5ikumzv8fytamqyv08imfehftxehrblnsprslnjogpcsdunagbrekcqn9embe3tcziupboj71qeqtvtijxccdsfihnec.png" alt="location" />
+              <Text pt='40px'>Hello
+                <Image w={20} h={20} ml={"10px"} src="https://www.citypng.com/public/uploads/small/11640206702gwyntgag5ikumzv8fytamqyv08imfehftxehrblnsprslnjogpcsdunagbrekcqn9embe3tcziupboj71qeqtvtijxccdsfihnec.png" alt="location" />
+                <br/>
                 Select your address</Text>
             </RouterLink>
             <Spacer />
             <Center >
-              <Flex h='45px' >
+              <Flex h='60px'>
                 <Menu>
-                  <MenuButton marginTop={"2px"} borderRadius={"8px"} as={Button} rightIcon={<ChevronDownIcon />}>
+                  <MenuButton as={Button} h='50px'
+                   borderRadius={"10px"} 
+                    rightIcon={<ChevronDownIcon />}>
                     All
                   </MenuButton>
 
@@ -40,42 +55,35 @@ const Navbar = ({children}) => {
                     <MenuItem><RouterLink style={{ textDecoration: 'none', color: "black", fontFamily: "Amazon Ember,Arial,sansserif" }} to="/">Baby</RouterLink></MenuItem>
                     <MenuItem><RouterLink style={{ textDecoration: 'none', color: "black", fontFamily: "Amazon Ember,Arial,sansserif" }} to="/">Beauty</RouterLink></MenuItem>
                   </MenuList>
-                  <Input placeholder='Search Amazonn.in' w='600px' h='45px' borderRadius={"10px"}  ></Input>
-                
+                  <Input   placeholder='Search Amazon.in'
+      w='600px'
+      h='40px'
+      borderRadius='10px'
+      value={query}
+      onChange={handleInputChange}
+      onKeyDown={handleKeyDown}
+     ></Input> 
+                  
                   
                   <IconButton
+                  h='50px'
+                   borderRadius={"10px"} 
                     w='40px'
-                    h='50px'
+                   
                     color='black'
                     backgroundColor={"#febd69 "}
                     aria-label='Search database'
-                    borderRadius={"10px"}
-                   icon={<SearchIcon />}
+                    icon={<SearchIcon />}
                   />
                 </Menu>
               </Flex>
             </Center>
             <Spacer />
-            <Text><RouterLink  style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Text pt='32px'>EN</Text></RouterLink></Text>
+            <Text style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }} ><Text pt='32px'>EN</Text></Text>
             <Spacer />
-            <Login></Login>
-            {/* <li>
-              {
-                isAuthenticated && <div>
-                  <h2 className="htwostyle">{user.name}</h2>
-                </div>
-              }
-              {
-                isAuthenticated ? (<button className="btnlogout" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-                  Log Out
-                </button>) : (
-                  <button className="btnlogin" onClick={() => loginWithRedirect()}>Log In</button>
-                )
-
-              }
-            </li> */}
+                   <Login></Login>
             <Spacer />
-            <Text><RouterLink  style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Text pt='30px'>Returns<br /> & Order</Text></RouterLink></Text>
+            <Text style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Text pt='30px'>Returns<br /> & Order</Text></Text>
             <Spacer />
             <Text><RouterLink to={"/cart"} style={{ textDecoration: 'none', color: "white", fontFamily: "Amazon Ember,Arial,sansserif" }}><Image w={60} h={60} pt='35px' src="https://icon-library.com/images/shopping-cart-icon-white/shopping-cart-icon-white-2.jpg" alt="cart" /></RouterLink></Text>
             <Spacer />
@@ -119,7 +127,7 @@ const Navbar = ({children}) => {
   )
 }
 
-export default Navbar;
+export default Navbar1;
 
 const DIV = styled.div`
   border:0px solid red;
