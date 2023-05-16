@@ -26,6 +26,7 @@ function Cartlist({}) {
   return (
     <>
     <Navbar1/> 
+    
     <div >
       {/* <Navbar1/> */}
 
