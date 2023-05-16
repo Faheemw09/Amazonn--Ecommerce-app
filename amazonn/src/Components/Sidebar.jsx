@@ -156,9 +156,9 @@ const DIV = styled.div`
   width: 15%;
   border-right: 2px solid gray;
   text-align: left;
-  background-color:#D0D1FF;
+  // background-color:#D0D1FF;
   margin-left: 20px;
-  color:#F25757;
+  color:black;
   text-color:#F25757
   
   label {

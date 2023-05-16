@@ -103,12 +103,6 @@ function Home() {
 <Footer/>  
   
 
-   
-
- 
-
-
-
  
     </div>
   )

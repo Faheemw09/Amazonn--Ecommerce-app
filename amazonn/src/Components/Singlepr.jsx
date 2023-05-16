@@ -1,15 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
+// import Navbar from "./Navbar";
+// import Footer from "./Footer";
 import "./productpage.css";
 import Rating from "../img/rating.png";
 import added from "../img/added.png";
 import add from "../img/not-added.png";
-import { AddToCart, RemoveCart } from "../redux/Search/Cart";
+import { AddToCart, RemoveCart } from "../action/Cart";
 import { useSelector, useDispatch } from "react-redux";
 import VanillaTilt from "vanilla-tilt";
+// import LowerNav from "./LowerNav";
 
-
-function SearchProductPage() {
+function ProductPage() {
   const { id } = useParams();
   const [product, setProduct] = useState("");
   const [Size, setSize] = useState("");
@@ -96,7 +98,8 @@ function SearchProductPage() {
 
   return (
     <>
-         <div
+      {/* <Navbar /> */}
+      <div
         style={product ? { height: "100%" } : { height: "100vh" }}
         className="product-page"
       >
@@ -208,8 +211,12 @@ function SearchProductPage() {
           </div>
         </div>
       </div>
-        </>
+      {/* <div className="lowerNav">
+        <LowerNav />
+      </div>
+      {product ? <Footer /> : ""} */}
+    </>
   );
 }
 
-export default SearchProductPage;
+export default ProductPage;

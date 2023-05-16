@@ -1,74 +1,80 @@
-import { Box ,Center , HStack, Image, Stack , Text, VStack} from '@chakra-ui/react';
+import {
+  Box, Card, CardBody, Heading, Center, HStack,
+  Image, Stack, Text, ButtonGroup, CardFooter, Divider,
+  Button,
+  VStack
+} from '@chakra-ui/react';
 import React, { useEffect, useState } from "react";
-import {  Link as RouterLink, useNavigate } from "react-router-dom";
+import { Link, Link as RouterLink, useNavigate } from "react-router-dom";
 import { cartdata } from '../redux/cartreducer/action';
 import { useDispatch } from 'react-redux';
 
 
-const Search_Api = `{https://precious-bat-rugby-shirt.cyclic.app/products}&s=titanic`;
+function ProductCrad({ id, title, imageURL, price, stock, brand, color, gender }) {
+  const [query, setQuery] = useState("titanic");
+  const dispatch = useDispatch()
 
-function ProductCrad({id, title, imageURL, price, stock,brand,color,gender}){
-  const [query, setQuery]= useState("titanic");
-  const dispatch=useDispatch()
-  
-  const carthandler=()=>{
-    setQuery(Search_Api)
+  const carthandler = () => {
+
     dispatch(cartdata(id))
-    
+
     alert("product added succesfully")
-   
+
   }
 
-  useEffect(()=>{
-    setQuery(`${Search_Api}&s=${query}`)
-  },[])
-    return (
-        <Center>
-           
-                <Box style={{ border:"0px solid black",boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",fontFamily:"Amazon Ember,Arial,sansserif" }}>
-                    <Image src={imageURL} h={250} w={250} alt={title} mt={"5px"}/>
-                    <Stack>
-                      <VStack>
-                      <HStack>
-                        {/* <label>Title:</label> */}
-                        <Text>{title} {query.title}</Text>
-                      </HStack>
-                      <HStack>
-                       
-                        <Text>{brand}</Text>
-                        <Text>{color} </Text>
-<Text>{gender}</Text>
-                        <label>₹:</label>
-                        <Text>{price} </Text>
-                      </HStack>
-                      <HStack>
-                        
-                        {/* <Text>{color}</Text> */}
-                      </HStack>
-                      <HStack>
-                        
-                        
-                      </HStack>
-                      <HStack>
-                       
-                      </HStack>
-                      <HStack>
-                        <label>Stock:</label>
-                        <Text>{stock}</Text>
-                        <button onClick={carthandler} style={{color:"#F25757",backgroundColor:"#D0D1FF",fontSize:"15px",border:"0px"}}>Add to Cart</button>
-                      </HStack>
-                      <HStack>
-                      
-                  
-                      </HStack>
-                      </VStack>
-                    
-                    </Stack>
-                </Box>            
-           
-            
-        </Center>
-    )
+
+  return (
+    <Center>
+
+      <Card 
+        className='shado'
+        maxW='sm' border={"0px solid red"} padding={"15px"}>
+        <CardBody >
+          <RouterLink to='/singleproduct/:id'>
+          <Image
+            src={imageURL}
+            alt={title}
+            borderRadius='lg'
+            h={250} w={250}
+          />
+          </RouterLink>
+          <Stack mt='6' spacing='3'>
+            <Heading w={"100%"} fontSize={"10px"}>{title}</Heading>
+
+            <Text>
+              Brand: {brand}
+            </Text>
+            <Text> Color: {color} </Text>
+
+
+            <HStack gap={"14px"} >
+            <Text marginLeft={"10%"} fontSize={"18px"} color='blue.600' >Price: {price}</Text>
+            <Text fontSize={"18px"} color='blue.600' >Stock: {stock}</Text>
+            </HStack>
+
+            </Stack>
+        </CardBody>
+        <Divider />
+        <CardFooter>
+          <ButtonGroup spacing='2' margin={"auto"}>
+            <Button onClick={carthandler}
+              variant='ghost'
+              colorScheme='blue'
+              borderRadius={"10px"}
+              padding={"4px 6px"}
+              fontSize={"18px"}
+              color={"white"}
+              backgroundColor={"#0000CD"}
+              border={"0px solid red"}
+            >
+              Add to cart
+            </Button>
+          </ButtonGroup>
+        </CardFooter>
+      </Card>
+
+    </Center>
+  )
 }
 
 export default ProductCrad;

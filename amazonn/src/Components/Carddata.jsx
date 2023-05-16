@@ -78,11 +78,11 @@ const Carddata = ({imageURL,title,price,id}) => {
             <h3>Your total bill is {Math.floor(price * count + (price * count) * 5 / 100 + (price * count) * 2 / 100)}</h3>
 
             <p className='pbox'>Merchandise Subtotal: {price * count} </p>
-            <br />
+          
             <p className='pbox'>Shipping: {Math.floor((price * count) * 5 / 100)}</p>
-            <br />
+           
             <p className='pbox'>Estimated Tax: {Math.floor((price * count) * 2 / 100)}</p>
-            <br />
+           
             <p className='ptotal'>Total Amount: {Math.floor(price * count + (price * count) * 5 / 100 + (price * count) * 2 / 100)}</p>
             <button onClick={paymenthandler} className='checkoutbtn'>
               CheckOut
@@ -92,6 +92,8 @@ const Carddata = ({imageURL,title,price,id}) => {
       </div>
    
     </div>
+    
+
     
   )
                       

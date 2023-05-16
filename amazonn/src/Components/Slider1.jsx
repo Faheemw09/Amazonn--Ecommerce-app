@@ -74,9 +74,7 @@ function Slider1() {
    
   ]
 
-  
-     
-  
+ 
   const settings = {
     dots: true,
     arrows: true,
@@ -140,14 +138,6 @@ function Slider1() {
   {/* mid section   ..............* */}
  
   
-
-   
-
- 
-
-
-
- 
     </div>
   )
 }

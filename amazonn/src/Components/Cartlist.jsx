@@ -19,8 +19,8 @@ function Cartlist({}) {
     <Navigate to="/product" />
 
   };
-  console.log('cartproduct:', cartproduct)
-  console.log('cartproduct.length:', cartproduct.length)
+  // console.log('cartproduct:', cartproduct)
+  // console.log('cartproduct.length:', cartproduct.length)
  
   
   return (

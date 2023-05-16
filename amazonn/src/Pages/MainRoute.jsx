@@ -8,7 +8,8 @@ import Productslist from "../Components/Productslist";
 import Cartlist from "../Components/Cartlist";
 import Payment from "./Payment";
 import SearchProductPage from "../Components/Searchproductpage";
-import CartSection from "../Components/CartSection";
+// import CartSection from "../Components/CartSection";
+import Singleproductpage from "../Components/Singleproductpage";
 // import SearchPage from "../Components/SearchPage";
 export const MainRoute = () => {
     return (
@@ -20,10 +21,10 @@ export const MainRoute = () => {
             <Route path="/editproduct/:id" element={<Editproductpage/>}/>
             <Route  path="/product" element={<Productslist/>}/>
             <Route path="/cart" element={<Cartlist/>}></Route>
-            <Route path="/carts" element={<CartSection/>}></Route>
+            {/* <Route path="/carts" element={<CartSection/>}></Route> */}
             <Route path="/payment" element={<Payment/>}></Route>
             <Route path="/products/:id" element={<SearchProductPage/>}></Route>           
-
+            <Route path="/singleproduct/:id" element={<Singleproductpage/>}></Route>    
             <Route path="*" element={<h4>404 Page not Found</h4>} />
         </Routes>
     )

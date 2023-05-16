@@ -2,32 +2,23 @@ import { Image, Text, Button, Heading, CardBody,Stack, Card,Box, Center,Unordere
 import { useState, useEffect, } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-
-//   import { Cartcontext } from "../context/Context";
 import { Link as Reactlink, NavLink } from "react-router-dom"
 import { useToast } from '@chakra-ui/react'
-import Navbar from "./Navbar";
+
 import Footer from "./Footer";
+import Navbar from './Navbar1';
 
 export const Singleproductpage = () => {
 
-  // const [cart,setCart]=useState([])
   const [loading, setLoading] = useState(false);
-  // console.log(cart)
+
   const [isInCart, setIsInCart] = useState(false);
-
-
-  // const handelClick=()=>{
-  //   setCart([...cart,{id,price,title}])
-
-  // }
-  // const Globalstate = useContext(Cartcontext);
-  // const dispatch = Globalstate.dispatch
+  const [data, setData] = useState({})
+  const { id } = useParams()
   const toast = useToast()
 
   const handleAddToCart = () => {
-    //   dispatch({ type: "ADD", payload: data });
-    setIsInCart(true);
+   setIsInCart(true);
     toast({
       title: '',
       description: "Item added to cart sucessfully!.",
@@ -37,18 +28,30 @@ export const Singleproductpage = () => {
     })
   };
 
-  const [data, setData] = useState({})
-  const { id } = useParams()
-  useEffect(() => {
-    axios.get(`https://precious-bat-rugby-shirt.cyclic.app/products/${id}`)
-      .then((res) => {
-        setData(res.data)
-        setLoading(false)
-      }).catch((err) => {
-        console.log(err)
-        setLoading(false)
-      })
-  }, [])
+  
+//   useEffect(() => {
+//     axios.get(`https://precious-bat-rugby-shirt.cyclic.app/products/${id}`)
+//       .then((res) => {
+// console.log("data",res.data)
+//         setData(res.data)
+//         // setLoading(false)
+//       }).catch((err) => {
+//         console.log(err)
+//         // setLoading(false)
+//       })
+//   }, [id])
+
+
+useEffect(()=>{
+axios.get(`https://precious-bat-rugby-shirt.cyclic.app/products/${id}`)
+.then((res)=>{
+  console.log(res.data);
+})
+.catch((err) => {
+          console.log(err)
+          // setLoading(false)
+        })
+},[])
 
   return (
     <div>
@@ -71,10 +74,11 @@ export const Singleproductpage = () => {
             <Spacer/>
           <Stack>
             <CardBody>
-              <Text  textAlign={"left"} fontFamily='commuter sans, Verdana' fontSize='28px' fontWeight='600' size='md'>{data.title}</Text>
+              <Text  textAlign={"left"} fontFamily='commuter sans, Verdana' 
+              fontSize='28px' fontWeight='600' size='md'>{data.title}</Text>
               <Text size='sm' textAlign={"left"}>Brand-{data.brand}</Text>
               <Text size='sm' textAlign={"left"}>Color-{data.color}</Text>
-              <Text py='2' textAlign={"left"}>Gender-{data.gender}</Text>
+              {/* <Text py='2' textAlign={"left"}>Gender-{data.gender}</Text> */}
               {/* </CardBody> */}
               
 
