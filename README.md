@@ -10,7 +10,7 @@ Frontend
 Deployment Link-https://amazonn-ten.vercel.app/
 
 
-Tech Stack
+<h1>Tech Stack</h1>
 React
 React-Redux
 Material-UI
@@ -24,7 +24,10 @@ Getting Started-
 npm start
 
 
+
+
  Snippets of Our Website-
+ 
 
  Home Page
 The home page displays featured products and allows users to navigate to the product page.
