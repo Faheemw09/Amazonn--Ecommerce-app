@@ -6,8 +6,7 @@ This project is a web application for an e-commerce website built with React, Re
 <h2>Backend data Api- https://precious-bat-rugby-shirt.cyclic.app/</h2> 
 
 
-<h2Frontend</h2> 
-Deployment Link-https://amazonn-ten.vercel.app/
+<h2Frontend Deployment Link- https://amazonn-black.vercel.app/</h2> 
 
 
 <h1>Tech Stack</h1>
