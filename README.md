@@ -61,7 +61,7 @@ Users can create an account, log in, and view their order history. Authenticatio
 
 The product page displays a list of products with a filter and sort functionality. Users can filter products by brand and color and sort them by price.
 
-![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/54d6d6e7-cee5-47a8-bfc3-39242e40f37d)
+![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/7f0f8c04-85a9-406a-9670-4b7a2b5ab055)
 
 
 
