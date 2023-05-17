@@ -1,9 +1,9 @@
-<h2>Project-Code:</h2> <p>envious-cactus-6437</p>
+<h2>Project-Code: envious-cactus-6437</h2> 
 
 This project is a web application for an e-commerce website built with React, React-Redux, Material UI, Chakra UI, Styled Components, HTML, CSS, and JavaScript. The application allows users to browse products, add them to their cart, and checkout. Additionally, it features a filter and sort functionality that allows users to search for products based on brand and color.
 
 
-<h2>Backend data Api-</h2> ttps://precious-bat-rugby-shirt.cyclic.app/
+<h2>Backend data Api- https://precious-bat-rugby-shirt.cyclic.app/</h2> 
 
 
 <h2Frontend</h2> 
