@@ -40,7 +40,7 @@ This project is a web application for an e-commerce website built with React, Re
 
 The home page displays featured products and allows users to navigate to the product page.
 
-![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/536b940e-f1b8-4a50-8db7-115376c2425a)
+![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/0589b85c-698b-425c-91fc-460d10a0a1c3)
 
 
 <h2>Sign page-</h2>
@@ -70,7 +70,7 @@ The product page displays a list of products with a filter and sort functionalit
 
 Users can filter products on the product page by brand or color using a dropdown menu. They can also sort products by price or popularity by selecting an option from a dropdown menu.
 
-![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/4c22219e-d551-410f-a3cd-c357d0c2d0c6)
+![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/5714fcc0-53a0-4578-b401-fc725fdbe8b8)
 
 
 
