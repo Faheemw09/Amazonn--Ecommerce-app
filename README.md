@@ -70,7 +70,7 @@ The product page displays a list of products with a filter and sort functionalit
 
 Users can filter products on the product page by brand or color using a dropdown menu. They can also sort products by price or popularity by selecting an option from a dropdown menu.
 
-![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/83a09e12-b780-4010-a3a4-05ccdc3f76d2)
+![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/4c22219e-d551-410f-a3cd-c357d0c2d0c6)
 
 
 
@@ -78,7 +78,14 @@ Users can filter products on the product page by brand or color using a dropdown
 
 Users can add products to their cart from the product page and checkout on the cart page.
 
-![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/e1a0530a-7b6a-4d5e-851b-f25fa0d81fd6)
+![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/c2574e20-f012-4cd5-8438-821c321d881a)
+
+
+<h2>Payment page</h2>
+
+Users can Click checkout Button Payment page.
+
+![image](https://github.com/Faheemw09/envious-cactus-6437/assets/110039298/12ff98ba-7f2e-4cb4-a398-8ed9d8258b6d)
 
      
 <h2>Admin Page*</h2>
