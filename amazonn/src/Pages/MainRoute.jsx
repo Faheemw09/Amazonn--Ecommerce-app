@@ -9,10 +9,11 @@ import Payment from "./Payment";
 import SearchProductPage from "../Components/Searchproductpage";
 import Singleproductpage from "../Components/Singleproductpage";
 import HomePage from "../HomeAllpage/HomePage";
+
 export const MainRoute = () => {
     return (
         <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<HomePage/>} />
             <Route path="/mainadmin" element={<MainAdmin/>}/>
             <Route  path="/login" element={<Login/>}/>
             <Route path="/addproduct" element={<Addproductpage/>}></Route>
