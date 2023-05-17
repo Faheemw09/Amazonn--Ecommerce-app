@@ -1,4 +1,4 @@
-<h2>Project-Code:</h2> <p>envious-cactus-6437<p>
+<h2>Project-Code:</h2> <p>envious-cactus-6437</p>
 
 This project is a web application for an e-commerce website built with React, React-Redux, Material UI, Chakra UI, Styled Components, HTML, CSS, and JavaScript. The application allows users to browse products, add them to their cart, and checkout. Additionally, it features a filter and sort functionality that allows users to search for products based on brand and color.
 
