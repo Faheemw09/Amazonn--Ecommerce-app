@@ -11,14 +11,21 @@ Deployment Link-https://amazonn-ten.vercel.app/
 
 
 <h1>Tech Stack</h1>
-React
-React-Redux
-Material-UI
-Chakra-UI
-Styled Components
-HTML
-CSS
-JavaScript
+<h3>React</h3> 
+
+<h3>React-Redux</h3>
+
+<h3>Material-UI</h3>
+
+<h3>Chakra-UI</h3>
+
+<h3>Styled Components</h3>
+
+<h3>HTML</h3>
+
+<h3>CSS</h3>
+
+<h3>JavaScript</h3>
 
 Getting Started-
 npm start
